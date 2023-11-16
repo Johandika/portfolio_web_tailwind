@@ -21,7 +21,9 @@ import elementor from "./elementor.png";
 import fontcreator from "./fontcreator.png";
 import figma from "./figma.png";
 import davinci from "./davinci.png";
+// Projects
 import slashtheory from "./slashtheory.jpg";
+import cheetah from "./cheetah.jpg";
 
 export {
   affinity,
@@ -46,4 +48,5 @@ export {
   tailwind,
   typescript,
   slashtheory,
+  cheetah
 };

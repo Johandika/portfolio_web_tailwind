@@ -1,20 +1,31 @@
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../../assets/images/logo.svg'
+import { Disclosure } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import logo from '../../assets/images/logo.svg';
+import { motion,useScroll } from 'framer-motion';
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Contact', href: '/test', current: false },
- 
-]
+  { name: 'Home', href: '/', current: location.pathname === '/' },
+  { name: 'Contact', href: '/test', current: location.pathname === '/test' },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Navbar() {
+  const {scrollYProgress} = useScroll();
+
   return (
-    <Disclosure as="nav" className="bg-Black text-white ">
+    <>
+    {/* <motion.div style={
+      {scaleY:scrollYProgress}}
+      className={`h-full w-1 fixed top-0 right-0 left-0 bg-RedDarkest transform   z-50`}>
+    </motion.div> */}
+    <motion.div style={
+      {scaleX:scrollYProgress}}
+      className={`sm:h-1 h-[2px] fixed top-0 right-0 left-0 bg-RedDarkest  z-50`}>
+    </motion.div>
+    <Disclosure as="nav" className="bg-Black text-white fixed top-0 left-0 right-0 z-40">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-fit">
@@ -82,5 +93,6 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
+    </>
   )
 }

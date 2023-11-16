@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const SkillsTicker = ({ skills, arah, kanan, kiri }) => {
+const SkillsTicker = ({ skills,  kanan, kiri }) => {
   // Duplikasi array skills dua kali untuk membuat efek loop yang seamless
   const doubledSkills = [...skills, ...skills, ...skills, ...skills];
 
@@ -36,7 +36,7 @@ const SkillsTicker = ({ skills, arah, kanan, kiri }) => {
             key={index}
             src={skill.logo}
             alt={skill.name}
-            className="h-20 mx-10"
+            className="h-12 sm:h-20 mx-5 sm:mx-10"
           />
         ))}
       </motion.div>
