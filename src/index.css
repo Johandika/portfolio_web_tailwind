@@ -25,3 +25,20 @@
   src: url("fonts/SpaceMono-Bold.ttf") format("truetype");
   font-weight: bold;
 }
+
+#root {
+background-color: #121212;
+}
+
+.parent {
+  position: relative;
+}
+
+.opacity-gradient-wrapper {
+  position: relative;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.parent {
+  position: relative;
+}

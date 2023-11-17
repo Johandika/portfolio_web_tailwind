@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from '../../assets/images/logo.svg';
 import { motion,useScroll } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const navigation = [
   { name: 'Home', href: '/', current: location.pathname === '/' },
@@ -14,18 +15,25 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const {scrollYProgress} = useScroll();
-
+  const [showNavbar, setShowNavbar] = useState(true);
+  
+  useEffect(() => {
+    return scrollYProgress.onChange(latest => {
+      if (latest > scrollYProgress.getPrevious() && latest > 0.03) {
+        setShowNavbar(false); // Sembunyikan navbar ketika scroll ke bawah
+      } else {
+        setShowNavbar(true); // Tampilkan navbar ketika scroll ke atas
+      }
+    });
+  }, [scrollYProgress]);
+  
   return (
     <>
-    {/* <motion.div style={
-      {scaleY:scrollYProgress}}
-      className={`h-full w-1 fixed top-0 right-0 left-0 bg-RedDarkest transform   z-50`}>
-    </motion.div> */}
     <motion.div style={
       {scaleX:scrollYProgress}}
-      className={`sm:h-1 h-[2px] fixed top-0 right-0 left-0 bg-RedDarkest  z-50`}>
+      className={`sm:h-1 h-[2px] fixed top-0 right-0 left-0 bg-RedDarkest origin-bottom-left  z-50`}>
     </motion.div>
-    <Disclosure as="nav" className="bg-Black text-white fixed top-0 left-0 right-0 z-40">
+    <Disclosure as="nav" className={`bg-Black text-white fixed top-0 left-0 right-0 z-40 ${showNavbar ? 'transition' : '-translate-y-full transition'}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-fit">

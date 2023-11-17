@@ -4,7 +4,7 @@ import Button from './Button'
 const ProjectCard = ({tipe,client,summary,image,colorButton,hoverGreen,hoverBlue,stripText='bg-RedDarkest', shadowBlue, shadowGreen}) => {
   return (
     <div className={`max-w-5xl min-h-[400px] sm:h-fit w-full ring-white ring-1 flex flex-col sm:flex-row items-center rounded-lg  hover:shadow-2xl ${shadowBlue? 'hover:shadow-blue-500':shadowGreen? 'hover:shadow-green-500': 'hover:shadow-RedDarkest'} hover:shadow-RedDarkest transition overflow-hidden cursor-pointer group`}>
-        <div className="w-full h-full sm:w-1/2 px-6 sm:px-0 sm:pr-2 sm:pl-6 font-SpaceMono shadow-lg flex flex-col gap-2  order-2 sm:order-1 justify-between  ">
+        <div className="w-full h-full sm:w-1/2 px-6 py-6 sm:py-0 sm:px-0 sm:pr-2 sm:pl-6 font-SpaceMono shadow-lg flex flex-col gap-2  order-2 sm:order-1 justify-between  ">
           <h2 className="text-gray-400 text-2xl tracking-widest">{tipe}</h2>
           <h1 className={`${stripText} text-5xl font-bold self-start`}>
             {client}

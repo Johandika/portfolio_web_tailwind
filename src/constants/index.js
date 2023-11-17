@@ -21,7 +21,11 @@ import {
   fontcreator,
   wordpress,
   slashtheory,
-  cheetah
+  cheetah,
+  banglele,
+  pmi,
+  asana,
+  erje
 } from "../assets/images/index.js";
 
 const skills = [
@@ -150,4 +154,75 @@ const projects = [
   }
 ]
 
-export { skillDesign, skills, skillsTwo, projects };
+const workExperiences = [
+  {
+    id:1,
+    company: 'PT Putra Mandiri Informatika',
+    position: 'U/UX Designer',
+    interval : 'Aug/21 - Present',
+    responsibilities: [
+      'Design and develop the Autopos POS application in the form of integrated mobile, dashboard, and QR orders.',
+      'Conduct end-to-end tests on newly updated applications.',
+      'Manage tasks in Asana, give and receive input from the team.',
+      'Conduct tests on various Sunmi and Newland devices.',
+      'Designing PT. Putra Mandiri Informatika website.',
+      'Collaborate with the Developer team every week.',
+      'Working on several other applications such as AMS device management, Ticketing Apps, Digital Payments.'
+    ],
+    logo:`${pmi}`,
+    tools:[
+      `${figma}`,
+      `${affinity}`,
+      `${affinityphoto}`,
+      `${asana}`,
+    ]
+  },
+  {
+    id:2,
+    company: 'PT Banglele Indonesia Maju',
+    position: 'Graphic Designer',
+    interval : 'Jan/21 - Aug/22',
+    responsibilities: [
+      'Design Instagram content needs such as feeds and reels.',
+      'Design printing needs such as banners, posters, flyers, and brochures.',
+      'Design presentation needs.',
+      'Design business proposals and annual work reports.',
+      'Designing a website using Figma, Figjam.',
+      'Editing corporate video content with Davinci Resolve.',
+      'Doing website development with WordPress and Elementor.'
+    ],
+    logo:`${banglele}`,
+    tools:[
+      `${figma}`,
+      `${affinity}`,
+      `${affinityphoto}`,
+      `${davinci}`,
+      `${elementor}`,
+      `${wordpress}`
+    ]
+  },
+  {
+    id:3,
+    company: 'Erje TV',
+    position: 'Graphic Designer',
+    interval : 'Mar/20 - Aug/22',
+    responsibilities: [
+      'Design Instagram content needs such as feeds and reels.',
+      'Design printing needs such as banners, posters, flyers, brochures.',
+      'Design presentation needs.',
+      'Design business proposals and annual work reports.',
+      'Designing a website using figma, figjam.',
+      'Doing website development with WordPress and Elementor.',
+    ],
+    logo:`${erje}`,
+    tools:[
+      `${figma}`,
+      `${affinity}`,
+      `${affinityphoto}`,
+      `${elementor}`,
+      `${wordpress}`
+    ]
+  },
+]
+
+export { skillDesign, skills, skillsTwo, projects,workExperiences};

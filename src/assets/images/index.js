@@ -13,6 +13,7 @@ import typescript from "./typescript.png";
 import tailwind from "./tailwind.png";
 import redux from "./redux.png";
 import nodejs from "./nodejs.png";
+import erje from "./erje.png";
 // Design skills
 import affinity from "./affinity.png";
 import affinityphoto from "./affinityphoto.png";
@@ -21,13 +22,26 @@ import elementor from "./elementor.png";
 import fontcreator from "./fontcreator.png";
 import figma from "./figma.png";
 import davinci from "./davinci.png";
+import asana from "./asana.png";
 // Projects
 import slashtheory from "./slashtheory.jpg";
 import cheetah from "./cheetah.jpg";
 // Logo Company
 import banglele from "./banglele.jpg";
+import pmi from "./pmi.jpg";
+// Certificates
+import bwacertificate from './bwacertificate.jpg';
+import coursenetcertificate from './coursenetcertificate.jpg';
+import udemycertificate from './udemycertificate.jpg';
+import freecodecampcertificate from './freecodecampcertificate.jpg';
+import dicodingcertificate from './dicodingcertificate.jpg';
 
 export {
+  bwacertificate,
+  coursenetcertificate,
+  udemycertificate,
+  freecodecampcertificate,
+  dicodingcertificate,
   affinity,
   affinityphoto,
   figma,
@@ -52,4 +66,7 @@ export {
   slashtheory,
   cheetah,
   banglele,
+  pmi,
+  asana,
+  erje
 };
