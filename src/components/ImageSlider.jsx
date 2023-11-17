@@ -38,8 +38,8 @@ const ImageSlider = () => {
   }
   
   return (
-    <div className="flex flex-col w-full relative">
-      <div className="w-full h-[calc(70vh-70px)] sm:h-[calc(90vh-90px)] flex items-center justify-center  ">
+    <div className="flex flex-col w-full ">
+      <div className="w-full h-[calc(70vh-70px)] sm:h-[calc(90vh-90px)] flex items-center justify-center  relative overflow-hidden">
         {images.map((image,index) => (
           <motion.img
             key={index}
