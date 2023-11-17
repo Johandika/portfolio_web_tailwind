@@ -41,7 +41,7 @@ const Works = () => {
                   {/* Looping Responsibilities */}
                   {item.responsibilities.map((item,index) => (
                     <li key={index+1} className="flex">
-                      <p className="mr-2">{index+1}</p>
+                      <p className="mr-2">{index+1}.</p>
                       <div>
                        {item}
                       </div>
