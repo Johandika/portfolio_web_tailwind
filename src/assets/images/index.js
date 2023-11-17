@@ -24,6 +24,8 @@ import davinci from "./davinci.png";
 // Projects
 import slashtheory from "./slashtheory.jpg";
 import cheetah from "./cheetah.jpg";
+// Logo Company
+import banglele from "./banglele.jpg";
 
 export {
   affinity,
@@ -48,5 +50,6 @@ export {
   tailwind,
   typescript,
   slashtheory,
-  cheetah
+  cheetah,
+  banglele,
 };
