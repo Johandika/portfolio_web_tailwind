@@ -37,7 +37,11 @@ const HeroSection = () => {
   };
 
   return (
-    <Container className={"flex flex-col sm:flex-row w-full h-fit sm:h-screen  justify-center items-center pt-5 sm:pt-0"}>
+    <Container
+      className={
+        "flex flex-col sm:flex-row w-full h-fit sm:h-screen  justify-center items-center pt-5 sm:pt-0"
+      }
+    >
       {/* Container kiri */}
       <div className="flex-1 my-auto flex flex-col gap-4 sm:gap-5  order-2 sm:order-1">
         <h2 className="text-lg sm:text-2xl font-SpaceMono">

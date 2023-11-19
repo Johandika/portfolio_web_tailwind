@@ -3,12 +3,18 @@ import Button from "../../components/Button";
 import Container from "../../components/Container";
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../constants";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const [displayData, setDisplayData] = useState(2);
+  const navigate = useNavigate();
 
   const loadMore = () => {
     setDisplayData((prevItemCount) => prevItemCount + 2);
+  };
+
+  const handleClick = (projectId) => {
+    navigate(`/project/${projectId}`);
   };
 
   return (
@@ -24,6 +30,7 @@ const Projects = () => {
           summary={project.summary}
           image={project.image}
           colorButton={project.color}
+          onClick={() => handleClick(project.id)}
           {...{
             hoverBlue: project.hover === "hoverBlue",
             hoverGreen: project.hover === "hoverGreen",
