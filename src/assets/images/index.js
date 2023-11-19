@@ -1,72 +1,37 @@
 // Coding skills
-import css from "./css.png";
-import js from "./js.png";
-import bootstrap from "./bootstrap.png";
-import dbeaver from "./dbeaver.png";
-import expressjs from "./expressjs.png";
-import html from "./html.png";
-import postgre from "./postgre.png";
-import nextjs from "./nextjs.png";
-import postman from "./postman.png";
-import reactjs from "./reactjs.png";
-import typescript from "./typescript.png";
-import tailwind from "./tailwind.png";
-import redux from "./redux.png";
-import nodejs from "./nodejs.png";
-import erje from "./erje.png";
+export { default as css } from "./css.png";
+export { default as js } from "./js.png";
+export { default as bootstrap } from "./bootstrap.png";
+export { default as dbeaver } from "./dbeaver.png";
+export { default as expressjs } from "./expressjs.png";
+export { default as html } from "./html.png";
+export { default as postgre } from "./postgre.png";
+export { default as nextjs } from "./nextjs.png";
+export { default as postman } from "./postman.png";
+export { default as reactjs } from "./reactjs.png";
+export { default as typescript } from "./typescript.png";
+export { default as tailwind } from "./tailwind.png";
+export { default as redux } from "./redux.png";
+export { default as nodejs } from "./nodejs.png";
+export { default as erje } from "./erje.png";
 // Design skills
-import affinity from "./affinity.png";
-import affinityphoto from "./affinityphoto.png";
-import wordpress from "./wordpress.png";
-import elementor from "./elementor.png";
-import fontcreator from "./fontcreator.png";
-import figma from "./figma.png";
-import davinci from "./davinci.png";
-import asana from "./asana.png";
+export { default as affinity } from "./affinity.png";
+export { default as affinityphoto } from "./affinityphoto.png";
+export { default as wordpress } from "./wordpress.png";
+export { default as elementor } from "./elementor.png";
+export { default as fontcreator } from "./fontcreator.png";
+export { default as figma } from "./figma.png";
+export { default as davinci } from "./davinci.png";
+export { default as asana } from "./asana.png";
 // Projects
-import slashtheory from "./slashtheory.jpg";
-import cheetah from "./cheetah.jpg";
+export { default as slashtheory } from "./slashtheory.jpg";
+export { default as cheetah } from "./cheetah.jpg";
 // Logo Company
-import banglele from "./banglele.jpg";
-import pmi from "./pmi.jpg";
+export { default as banglele } from "./banglele.jpg";
+export { default as pmi } from "./pmi.jpg";
 // Certificates
-import bwacertificate from './bwacertificate.jpg';
-import coursenetcertificate from './coursenetcertificate.jpg';
-import udemycertificate from './udemycertificate.jpg';
-import freecodecampcertificate from './freecodecampcertificate.jpg';
-import dicodingcertificate from './dicodingcertificate.jpg';
-
-export {
-  bwacertificate,
-  coursenetcertificate,
-  udemycertificate,
-  freecodecampcertificate,
-  dicodingcertificate,
-  affinity,
-  affinityphoto,
-  figma,
-  elementor,
-  davinci,
-  fontcreator,
-  wordpress,
-  css,
-  js,
-  bootstrap,
-  dbeaver,
-  expressjs,
-  html,
-  nextjs,
-  nodejs,
-  postgre,
-  postman,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  slashtheory,
-  cheetah,
-  banglele,
-  pmi,
-  asana,
-  erje
-};
+export { default as bwacertificate } from "./bwacertificate.jpg";
+export { default as coursenetcertificate } from "./coursenetcertificate.jpg";
+export { default as udemycertificate } from "./udemycertificate.jpg";
+export { default as freecodecampcertificate } from "./freecodecampcertificate.jpg";
+export { default as dicodingcertificate } from "./dicodingcertificate.jpg";
