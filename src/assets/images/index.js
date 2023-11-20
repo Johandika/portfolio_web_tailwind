@@ -41,3 +41,6 @@ export { default as slashtheoryimage2 } from "./slashtheoryimage2.jpg";
 export { default as slashtheoryimage3 } from "./slashtheoryimage3.jpg";
 export { default as slashtheoryimage4 } from "./slashtheoryimage4.jpg";
 export { default as slashtheoryimage5 } from "./slashtheoryimage5.jpg";
+// Cheetah Erje
+export { default as cheetahimage1 } from "./cheetahimage1.gif";
+export { default as cheetahimage2 } from "./cheetahimage2.jpg";
