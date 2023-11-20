@@ -35,3 +35,9 @@ export { default as coursenetcertificate } from "./coursenetcertificate.jpg";
 export { default as udemycertificate } from "./udemycertificate.jpg";
 export { default as freecodecampcertificate } from "./freecodecampcertificate.jpg";
 export { default as dicodingcertificate } from "./dicodingcertificate.jpg";
+// Slashtheory
+export { default as slashtheoryimage1 } from "./slashtheoryimage1.jpg";
+export { default as slashtheoryimage2 } from "./slashtheoryimage2.jpg";
+export { default as slashtheoryimage3 } from "./slashtheoryimage3.jpg";
+export { default as slashtheoryimage4 } from "./slashtheoryimage4.jpg";
+export { default as slashtheoryimage5 } from "./slashtheoryimage5.jpg";

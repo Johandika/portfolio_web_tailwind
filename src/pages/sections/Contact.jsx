@@ -74,7 +74,7 @@ const Contact = () => {
                 className="text-Black p-4 sm:p-6 rounded-md mt-1 focus:ring-4 focus:ring-RedDarkest focus:shadow-2xl focus:shadow-RedDarkest focus:ring-opacity-80"
               />
               {errors.user_name && (
-                <p className="text-RedDarkest">{errors.user_name.message}</p>
+                <p className="text-RedDarkest mt-[6px]">{errors.user_name.message}</p>
               )}
             </div>
             <div className="flex flex-col flex-1">
@@ -95,7 +95,7 @@ const Contact = () => {
                 className="text-Black  p-4 sm:p-6 rounded-md mt-1 focus:ring-4 focus:ring-RedDarkest focus:shadow-2xl focus:shadow-RedDarkest focus:ring-opacity-80"
               />
               {errors.user_email && (
-                <p className="text-RedDarkest">{errors.user_email.message}</p>
+                <p className="text-RedDarkest mt-[6px]">{errors.user_email.message}</p>
               )}
             </div>
           </div>
@@ -114,7 +114,7 @@ const Contact = () => {
               rows="5"
             />
             {errors.message && (
-              <p className="text-RedDarkest">{errors.message.message}</p>
+              <p className="text-RedDarkest ">{errors.message.message}</p>
             )}
           </div>
           <Button
