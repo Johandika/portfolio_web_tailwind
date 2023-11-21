@@ -33,6 +33,12 @@ import {
   slashtheoryimage5,
   cheetahimage1,
   cheetahimage2,
+  cheetahimage3,
+  cheetahimage4,
+  cheetahimage5,
+  cheetahimage6,
+  cheetahimage7,
+  cheetahimage8,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -274,44 +280,60 @@ const projects = [
       {
         title:'Process',
         process:'Gathering requirements',
-        description:'During the project, we did not even hold a video call to discuss needs, this was due to the busyness of the clients. All information was obtained through the WhatsApp group which contains 3 people, namely me and 2 clients. Clients explain the needs, flow and concept of web apps, and send asset links that I can access. Some of the notes obtained from the results of discussions in the WhatsApp group are:',
+        description:'Since my client and I are in the same city, Pekanbaru, we decided to start the project by meeting at a Cheetah Erje office. Talk about the problem, objectives, scope and budget. These are the notes I took after the meeting :',
         list:[
-          'Clients request a logo design with a logotype type with the brand colors magenta and cyan.',
-          'Clients request a dark color tone for the background.',
-          'The client requested a simple business card, with a dark background.',
-          'The client requests to use a typewriter font as the heading in the hero section.',
-          'The client requests that the website be developed with Elementor and a message sending feature is made to the admin email on the contact page.',
+          'They want a clean, uncluttered UI that is easy to read and navigate',
+          'Blue is the primary color and white is the background',
+          'Key words of design inspiration: design donation, design foundation, autodebit.',
         ],
-        process2:'Logo Design Process',
-        description2:'The first stage in working on this project is the logo design stage. After I picked up a few discussion points from the WhatsApp group with the client, I concluded that the client wanted a logo in the form of a logotype with cyan and magenta tones. From the several concepts that I made, clients agreed on a futuristic logotype concept, with a slash on the letter "l" logo and a negative space slash on the letter "o" logo as well as a logotype style with firm angles and a truncated "s" style that strengthens futuristic impression. In this logotype concept, I also applied two color tones, namely magenta and cyan, to the two truncated letters "s". The sketch and final result of the agreed logo can be seen in the image below.',
-        image2:`${slashtheoryimage2}`,
-        caption2:'Some of the initial conversations with clients on behance and then continued to WhatsApp.',
-        process3:'Sitemap',
-        description3:`The initial action I took upon finalizing the deal was to develop a sitemap, providing a comprehensive overview of the website's sections. This sitemap serves as a valuable tool for assessing the project's scope and serves as my reference point during the page design phase. Once the sitemap was completed, I shared it with them for their approval before proceeding to the subsequent step, which involves creating wireframes.`,
-        image3:`${slashtheoryimage3}`,
+        image:`${cheetahimage3}`,
+        caption: 'Meeting Cheetah Erje',
+
+        process2:'Sitemap',
+        description2:`The first step I took when we had a deal was to create a sitemap so that everyone could see the overall structure of the website's sections. This sitemap is very useful to see how big it is in scope and also as my guide when designing pages. When the sitemap was complete, I sent it to them for approval before moving on to the next step, the wireframe.`,
+
+        process3:'Website for Inspiration',
+        description3:`I don't get inspiration from clients so all my inspiration is looking for myself for the look and feel. The inspiration I'm looking for is a website that uses a white background, is clean, and uses the main color blue. And this is the website I found.`,
+        image3:`${cheetahimage4}`,
         caption3:'Sitemap',
-        process4:'Website for Inspiration',
-        description4:`I have discovered an inspiring design that perfectly aligns with my vision. I desire a website that exudes elegance through a dark color scheme, while maintaining a polished and minimalistic appearance. I would like to share with you the website that captured my interest.`,
-        image4:`${slashtheoryimage4}`,
-        caption4:'Inspirations Website',
+
+        process4:'Wireframe',
+        description4:`Wireframe Once the sitemap is approved, I move on to the wireframe process. In this wireframe, I'm using the content as well as the layout I'm proposing to present, so they know what the page is going to look like. I find this wireframe process very important so both me and the client can focus on the content first. They agreed with most of the above pages, with some minor revisions. The first is the hero section, initially I explained to put an image in the background in this section, but they want one of their activity clusters to be displayed in the form of a video as a background. They also wanted the induction section to use illustrations instead of pictures.`,
+        image4:`${cheetahimage5}`,
+        caption4:'Wireframe',
+
         process5:'Define Design Colors',
-        description5:`I skipped the wireframe phase and headed straight for the high fidelity mockup phase for some reason from the client. Before heading to the mockup, I did some research on what colors I should use, based on the company's branding. Also I compared it with similar sites.`,
-        image5:`${slashtheoryimage5}`,
+        description5:`Before heading to the mockup, I did some research on what colors I should use, based on what branding and company. Also I compared it with similar websites.`,
+        image5:`${cheetahimage6}`,
         caption5:'Colors',
+
         process6:'Mockup',
-        description6:`In making this mockup phase, I didn't get many revisions, only a few layout and asset revisions. After getting approval, I did development on the design I had made using wordpress.`,
-        image6:`${slashtheory}`,
+        description6:`After some feedback about the wireframes in the figma files and their approval, I moved on to the mockup phase. I ended up using most of the layouts from wireframes which means they agreed with my design proposal. Fill in the images, create some design elements to emphasize the site's meaning, add color, and enhance the layout.`,
+        image6:`${cheetahimage7}`,
         caption6:'Mockup',
       },
       {
+        title:'Result',
+        description:'With some feedback and revisions, the design was finally completed. Then the next stage is the development process.',
+        image:`${cheetah}`,
+        caption:'Mockup',
+      },
+      {
         title:'Development',
-        description:'I did development using wordpress and elementor within a week. You can see it directly on the link below:',
+        description:'There are several features that are worked on at this stage, namely:',
+        list: [
+          'Create a video background in the hero section.',
+          'Create a form feature that will send data directly to the Cheetah Erje admin email'
+        ],
+        image:`${cheetahimage8}`,
+        caption:'Form after developing',
+        description2:'This process takes 3 days of development until the site is ready to go and now you can see it in action.'
       },
   ]
   },
   {
     id:3,
-    tipe:'WEBSITE',
+    tipe:'Autopos Apps',
     client: 'PMI Corp.',
     summary: 'PT. Putra Mandiri Informatika was founded in 2017 and focuses on distributing hardware such as cash registers and payment instruments (EDC).',
     image: `${cheetah}`,

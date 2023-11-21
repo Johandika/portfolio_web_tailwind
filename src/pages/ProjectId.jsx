@@ -80,7 +80,7 @@ console.log(project.link)
                 
               />
             ))}
-            <Button text={'slashtheory.com'} className={'text-white tracking-widest self-center'} onClick={handleClick}/>
+            <Button text={project.link} className={'text-white tracking-widest self-center'} onClick={handleClick}/>
           </div>
         </div>
       </Container>

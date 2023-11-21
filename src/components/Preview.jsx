@@ -11,7 +11,7 @@ const Preview = ({header,client, image,image2,year,descriptionPreview,caption,ca
         <p className="mb-4">Year : {year}</p>
         <p>{descriptionPreview}.</p>
       </div>
-      {image2&&(<Image image={image2} caption={caption2}/>)}
+      {image2&&(<Image image={image2} medium caption={caption2}/>)}
     </section> 
   )
 }
