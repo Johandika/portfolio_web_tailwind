@@ -50,3 +50,5 @@ export { default as cheetahimage5 } from "./cheetahimage5.jpg";
 export { default as cheetahimage6 } from "./cheetahimage6.jpg";
 export { default as cheetahimage7 } from "./cheetahimage7.jpg";
 export { default as cheetahimage8 } from "./cheetahimage8.jpg";
+// Autopos
+export { default as autoposapps } from "./autoposapps.jpg";

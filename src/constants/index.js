@@ -39,6 +39,7 @@ import {
   cheetahimage6,
   cheetahimage7,
   cheetahimage8,
+  autoposapps,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -333,8 +334,19 @@ const projects = [
   },
   {
     id:3,
+    tipe:'MOBILE APPS',
+    client: 'PT Putra Mandiri Informatika',
+    summary: 'Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.',
+    image: `${autoposapps}`,
+    color: 'blue-700',
+    hover:'hoverBlue',
+    shadowBlue: 'shadowBlue',
+    stripText: 'bg-blue-700'
+  },
+  {
+    id:4,
     tipe:'Autopos Apps',
-    client: 'PMI Corp.',
+    client: 'Putra Mandiri Informatika',
     summary: 'PT. Putra Mandiri Informatika was founded in 2017 and focuses on distributing hardware such as cash registers and payment instruments (EDC).',
     image: `${cheetah}`,
     color: 'blue-700',
