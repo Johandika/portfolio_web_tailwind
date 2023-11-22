@@ -44,7 +44,7 @@ console.log(project.link)
           <Preview header={project.preview.title} year={project.year} client={project.client} descriptionPreview={project.preview.description} image={project.image} image2={project.preview.image} caption={project.preview.caption} caption2={project.preview.caption2}/>
           {/* Content */}
           <div className="gap-8 flex flex-col">
-            {project?.content.map((item) => (
+            {project?.content?.map((item) => (
               <Topic 
                 key={item?.title} title={item?.title} 
                 description={item?.description}
@@ -80,7 +80,8 @@ console.log(project.link)
                 
               />
             ))}
-            <Button text={project.link} className={'text-white tracking-widest self-center'} onClick={handleClick}/>
+            {project.link && ( <Button text={project.link} className={'text-white tracking-widest self-center'} onClick={handleClick}/> )
+            }
           </div>
         </div>
       </Container>

@@ -40,6 +40,7 @@ import {
   cheetahimage7,
   cheetahimage8,
   autoposapps,
+  autoposapps2,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -236,7 +237,7 @@ const projects = [
     shadowGreen: 'shadowGreen',
     stripText: 'bg-green-700',
     preview:{
-      title:'Cheetah, Religious social Foundation web design for fundraising.',
+      title:'Cheetah, religious social foundation web design for fundraising.',
       description:'This project is the first development of the Cheetah Erje landing page website. Cheetah is a special division of the Nadwah Islamiyah Foundation which was established specifically to collect funds from all muhsinin who wish to donate. The funds collected will be distributed to 4 activity clusters under the auspices of the Nadwah Islamiyah foundation, namely the Raudhatul Jannah Pekanbaru Mosque, the Baitussalam Mosque and Islamic Boarding School, the Tree of Merit, and the Tahfidz Akhawat House.',
       image:`${cheetahimage1}`,
       caption:'Cheetah Web Design',
@@ -330,7 +331,7 @@ const projects = [
         caption:'Form after developing',
         description2:'This process takes 3 days of development until the site is ready to go and now you can see it in action.'
       },
-  ]
+    ]
   },
   {
     id:3,
@@ -338,22 +339,106 @@ const projects = [
     client: 'PT Putra Mandiri Informatika',
     summary: 'Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.',
     image: `${autoposapps}`,
+    year: '2023',
     color: 'blue-700',
     hover:'hoverBlue',
     shadowBlue: 'shadowBlue',
-    stripText: 'bg-blue-700'
+    stripText: 'bg-blue-700',
+    preview:{
+      title:'Autopos apps, integrated sales management mobile application.',
+      description:'Autopos Apps is one of 3 Autopos applications that are integrated with each other, the Autopos mobile application helps business owners to carry out sales management. This application will later be used on the waiter/cashier side to help carry out transactions from the customer to the waiter/cashier. Apart from that, this application can accept online orders, shift changes, order history, customer list management, ongoing transaction management.',
+      image:`${autoposapps2}`,
+      caption:'Autopos apps preview',
+      caption2:'Autopos application is available on Playstore'
+    },
+    content:[
+      {
+        title:'Problem',
+        description:'In the process of creating 3 integrated Autopos applications (CMS, mobile apps, QR Tablet Order) an application is needed as a bridge that connects the data side on the CMS side with the client, therefore an Autopos mobile application was created with the features needed to interact with the client such as ordering features, transactions, transaction history, Void, changing shifts, online ordering, etc. which directly connect clients (in this case, namely business actors such as cashiers/waiters/business owners) with customers.',
+      },
+      {
+        title:'Users & Audiences',
+        description:`Users of this application are business people who need a complete sales data management system. Which will make it easier for users to track sales information, product management, stock management, payment management, employee shift settings, etc. With this application, it is hoped that all business recording and monitoring can be seen in an integrated application system, namely Autopos.`
+      },
+      {
+        title:'Roles & Responsibilities',
+        list:[
+          'UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.',
+          'Tester. I am also the designer in this project.',
+        ],
+        description2:'In other words, this project is a personal project that is done alone.'
+      },
+      {
+        title:'Scope and Constraints',
+        description:'This is a website development project where a website is created from scratch. The Cheetah Erje team does not have a draft of the website content structure, does not collect assets, and I create the structure and design from scratch, so it requires more time and more intense discussion regarding the content structure. I also have to wait to get the latest photo assets from the ongoing activity cluster. So I developed the website structure from the information I received during the discussion. Luckily I got illustrations from friends in the illustrator community in Indonesia. The section list that I designed is:',
+        list:[
+          'Above the fold section',
+          'About us section',
+          'Introduction to the program section',
+          'Documentation section',
+          'Form section'
+        ],
+        description2:'And the features that I developed are :',
+        list2:[
+          'Send data from the form that has been filled in on the website to the Cheetah Erje admin email for follow-up.',
+          'Create an "Above the fold" video background.',
+        ],
+      },
+      {
+        title:'Process',
+        process:'Gathering requirements',
+        description:'Since my client and I are in the same city, Pekanbaru, we decided to start the project by meeting at a Cheetah Erje office. Talk about the problem, objectives, scope and budget. These are the notes I took after the meeting :',
+        list:[
+          'They want a clean, uncluttered UI that is easy to read and navigate',
+          'Blue is the primary color and white is the background',
+          'Key words of design inspiration: design donation, design foundation, autodebit.',
+        ],
+        image:`${cheetahimage3}`,
+        caption: 'Meeting Cheetah Erje',
+
+        process2:'Sitemap',
+        description2:`The first step I took when we had a deal was to create a sitemap so that everyone could see the overall structure of the website's sections. This sitemap is very useful to see how big it is in scope and also as my guide when designing pages. When the sitemap was complete, I sent it to them for approval before moving on to the next step, the wireframe.`,
+
+        process3:'Website for Inspiration',
+        description3:`I don't get inspiration from clients so all my inspiration is looking for myself for the look and feel. The inspiration I'm looking for is a website that uses a white background, is clean, and uses the main color blue. And this is the website I found.`,
+        image3:`${cheetahimage4}`,
+        caption3:'Sitemap',
+
+        process4:'Wireframe',
+        description4:`Wireframe Once the sitemap is approved, I move on to the wireframe process. In this wireframe, I'm using the content as well as the layout I'm proposing to present, so they know what the page is going to look like. I find this wireframe process very important so both me and the client can focus on the content first. They agreed with most of the above pages, with some minor revisions. The first is the hero section, initially I explained to put an image in the background in this section, but they want one of their activity clusters to be displayed in the form of a video as a background. They also wanted the induction section to use illustrations instead of pictures.`,
+        image4:`${cheetahimage5}`,
+        caption4:'Wireframe',
+
+        process5:'Define Design Colors',
+        description5:`Before heading to the mockup, I did some research on what colors I should use, based on what branding and company. Also I compared it with similar websites.`,
+        image5:`${cheetahimage6}`,
+        caption5:'Colors',
+
+        process6:'Mockup',
+        description6:`After some feedback about the wireframes in the figma files and their approval, I moved on to the mockup phase. I ended up using most of the layouts from wireframes which means they agreed with my design proposal. Fill in the images, create some design elements to emphasize the site's meaning, add color, and enhance the layout.`,
+        image6:`${cheetahimage7}`,
+        caption6:'Mockup',
+      },
+      {
+        title:'Result',
+        description:'With some feedback and revisions, the design was finally completed. Then the next stage is the development process.',
+        image:`${cheetah}`,
+        caption:'Mockup',
+      },
+      {
+        title:'Development',
+        description:'There are several features that are worked on at this stage, namely:',
+        list: [
+          'Create a video background in the hero section.',
+          'Create a form feature that will send data directly to the Cheetah Erje admin email'
+        ],
+        image:`${cheetahimage8}`,
+        caption:'Form after developing',
+        description2:'This process takes 3 days of development until the site is ready to go and now you can see it in action.'
+      },
+    ]
   },
-  {
-    id:4,
-    tipe:'Autopos Apps',
-    client: 'Putra Mandiri Informatika',
-    summary: 'PT. Putra Mandiri Informatika was founded in 2017 and focuses on distributing hardware such as cash registers and payment instruments (EDC).',
-    image: `${cheetah}`,
-    color: 'blue-700',
-    hover:'hoverBlue',
-    shadowBlue: 'shadowBlue',
-    stripText: 'bg-blue-700'
-  }
+  
 ]
 
 const workExperiences = [
