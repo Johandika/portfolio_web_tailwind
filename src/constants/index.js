@@ -336,7 +336,7 @@ const projects = [
   {
     id:3,
     tipe:'MOBILE APPS',
-    client: 'PT Putra Mandiri Informatika',
+    client: 'Autopos Apps',
     summary: 'Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.',
     image: `${autoposapps}`,
     year: '2023',
@@ -364,9 +364,9 @@ const projects = [
         title:'Roles & Responsibilities',
         list:[
           'UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.',
-          'Tester. I am also the designer in this project.',
+          'Tester. I am also did end to end test in this project.',
         ],
-        description2:'In other words, this project is a personal project that is done alone.'
+        description2:`The design that has been created is submitted to the development team via Asana. And every Friday there will be a meeting to discuss the week's progress and results.`
       },
       {
         title:'Scope and Constraints',
