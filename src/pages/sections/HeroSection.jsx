@@ -59,11 +59,7 @@ const HeroSection = () => {
           text={["Fullstack Javascript", "UI/UX Designer"]}
         />
         <p className="leading-relaxed">
-          I'm from Indonesia and have a career in visual design for the last 3
-          years. I am currently developing career skills into website
-          development and have worked on several projects as a fullstack. Design
-          and Programming is my passion, and right now I am looking forward to
-          collaborating with you!
+        I am from Indonesia and have been pursuing a career in visual design for the past 3 years. Currently, I am expanding my career skills into website development and have worked on several projects as a fullstack developer. Design and programming are my passions, and I am very excited about the prospect of collaborating with you!
         </p>
         <div className="flex flex-row flex-wrap gap-5">
           <Button
