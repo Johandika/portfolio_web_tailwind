@@ -4,7 +4,7 @@ import { skillDesign, skills, skillsTwo } from "../../constants";
 
 const Skills = () => {
   return (
-    <div className="py-20 bg-Black flex flex-col gap-10">
+    <div className="py-20  flex flex-col gap-10">
       <Container className=" overflow-hidden flex flex-col justify-center items-center ">
         {/* Coding Skills */}
         <h2 className="font-SpaceMono text-2xl mb-10">Coding Skills</h2>

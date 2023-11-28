@@ -31,9 +31,9 @@ export default function Navbar() {
     <>
     <motion.div style={
       {scaleX:scrollYProgress}}
-      className={`sm:h-1 h-[2px] fixed top-0 right-0 left-0 bg-RedDarkest origin-bottom-left  z-50`}>
+      className={`sm:h-1 h-[2px] fixed top-0 right-0 left-0 bg-RedDarkest origin-bottom-left z-50`}>
     </motion.div>
-    <Disclosure as="nav" className={`bg-Black text-white fixed top-0 left-0 right-0 z-40 ${showNavbar ? 'transition' : '-translate-y-full transition'}`}>
+    <Disclosure as="nav" className={`bg-Black/50 backdrop-blur-sm border-b-[0.5px] border-b-Red/20 text-white fixed top-0 left-0 right-0 z-40 ${showNavbar ? 'transition' : '-translate-y-full transition'}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-fit">

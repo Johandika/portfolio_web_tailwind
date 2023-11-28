@@ -16,7 +16,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`max-w-5xl min-h-[400px] sm:h-fit w-full ring-white ring-1 flex flex-col sm:flex-row items-center rounded-lg  hover:shadow-2xl ${
+      className={`max-w-5xl min-h-[400px] sm:h-fit w-full bg-Black ring-white ring-1 flex flex-col sm:flex-row items-center rounded-lg  hover:shadow-2xl ${
         shadowBlue
           ? "hover:shadow-blue-500"
           : shadowGreen
