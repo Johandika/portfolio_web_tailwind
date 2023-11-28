@@ -50,7 +50,6 @@ const ImageSlider = () => {
             animate={positions[positionIndex[index]]}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
-            onClick={() => alert("hai")}
           />
         ))}
       </div>
