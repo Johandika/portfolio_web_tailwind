@@ -24,9 +24,9 @@ console.log(project.link)
   };
 
   return (
-    <div className="font-Poppins sm:pt-[90px] py-6">
+    <div className="font-Poppins pt-[80px]  sm:pt-[90px] py-6">
       <Container>
-        <div className="flex flex-col  bg-white text-Black p-10 gap-6">
+        <div className="flex flex-col  bg-white text-Black p-6 sm:p-10 gap-6">
           {/* Back button */}
           <div
             onClick={handleBackClick}
