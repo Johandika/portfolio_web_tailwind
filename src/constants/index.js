@@ -41,6 +41,11 @@ import {
   cheetahimage8,
   autoposapps,
   autoposapps2,
+  autoposapps3,
+  autoposapps4,
+  autoposapps5,
+  autoposapps6,
+  autoposapps7,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -139,12 +144,102 @@ const skillDesign = [
 const projects = [
   {
     id:1,
+    tipe:'MOBILE APPS',
+    link:'https://www.autopos.id/',
+    client: 'Autopos Apps',
+    summary: 'Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.',
+    image: `${autoposapps}`,
+    year: '2023',
+    preview:{
+      title:'Autopos apps, integrated sales management mobile application.',
+      description:'Autopos Apps is one of 3 Autopos applications that are integrated with each other, the Autopos mobile application helps business owners to carry out sales management. This application will later be used on the waiter/cashier side to help carry out transactions from the customer to the waiter/cashier. Apart from that, this application can accept online orders, shift changes, order history, customer list management, ongoing transaction management.',
+      image:`${autoposapps2}`,
+      caption:'Autopos apps preview',
+      caption2:'Autopos application is available on Playstore'
+    },
+    content:[
+      {
+        title:'Problem',
+        description:'In the process of creating 3 integrated Autopos applications (CMS, mobile apps, QR Tablet Order) an application is needed as a bridge that connects the data side on the CMS side with the client, therefore an Autopos mobile application was created with the features needed to interact with the client such as ordering features, transactions, transaction history, Void, changing shifts, online ordering, etc. which directly connect clients (in this case, namely business actors such as cashiers/waiters/business owners) with customers.',
+      },
+      {
+        title:'Users & Audiences',
+        description:`Users of this application are business people who need a complete sales data management system. Which will make it easier for users to track sales information, product management, stock management, payment management, employee shift settings, etc. With this application, it is hoped that all business recording and monitoring can be seen in an integrated application system, namely Autopos.`
+      },
+      {
+        title:'Roles & Responsibilities',
+        list:[
+          'UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.',
+          'Tester. I am also did end to end test in this project.',
+        ],
+        description2:`The design that has been created is submitted to the development team via Asana. And every Friday there will be a meeting to discuss the week's progress and results.`
+      },
+      {
+        title:'Scope and Constraints',
+        description:'Scope :',
+        list:[
+          `Core Features of the Application: The Autopos application has several core features that include sales management, acceptance of online orders, shift changes, order history, customer list management, and ongoing transaction management. These are the primary features to be implemented in the application.',
+          'Integration with the Autopos Ecosystem: This application must be fully integrated with other applications within the Autopos ecosystem, including the Content Management System (CMS) and QR Tablet Order. This will enable smooth data exchange between all components of this ecosystem.`,
+          'UI/UX Design: One of my primary responsibilities as a UI/UX designer is to ensure that the user interface (UI) and user experience (UX) design of the application align with user needs. This includes designing user-friendly layouts, navigation, and interactions.',
+          'Testing and Quality Assurance: In addition to design, you also have a role as a tester to ensure that the application functions properly and is free from bugs or issues. End-to-end testing will be conducted to check all app features.',
+        ],
+        description2:'Constraints:',
+        list2:[
+          'Time: The development of Autopos Apps must adhere to the set deadline, which can limit the amount of time available for designing, developing, and testing the application.',
+          'Device Compatibility: The application must perform well on various mobile devices, including smartphones and tablets. This could be a constraint if there are differences in device specifications used by users.',
+          `Data Quality: The accuracy and quality of the data used in the application are critical constraints. Inaccurate or incomplete data can disrupt the application's functionality.`,
+          'Security: Security of transactions and customer data must be tightly maintained. This includes protection against cyber threats and potential data breaches.',
+        ],
+      },
+      {
+        title:'Process',
+        process:'Product Knowledge',
+        description:`In the initial stage of developing the Autopos Apps project, the first step I took was to gain a strong understanding of the product. This involved interviews with the client, Autopos Apps, to grasp the project's goals, vision, and mission. I also studied the previous applications within the Autopos ecosystem to understand how they interacted with each other. Additionally, I researched the sales management industry to comprehend relevant user trends and needs.`,
+       
+
+        process2:'Sitemap',
+        description2:`Once the product understanding was established, the next step was to create a sitemap. A sitemap is a visual representation of the application's structure, encompassing various pages and how they are interconnected. This aids us in organizing information and navigation within the application effectively. The sitemap also enables me and the development team to have a clear overview of how the application will be structured.`,
+
+        process3:'Apps for Inspiration',
+        description3:`In an effort to gather further ideas and inspiration for the design of Autopos Apps, I also observed and analyzed various related websites that might have design elements or features relevant to the project. This step helps in identifying the latest design trends and keeping the application relevant in the competitive market.`,
+        image3:`${autoposapps5}`,
+        caption3:'Inspiration from ESB, iSeller and Qbiz Apps',
+
+        process4:'Design System',
+        description4:`Once wireframes have been approved, we initiate the development of the design system. The design system is a guideline that encompasses design elements like colors, fonts, icons, and UI components that will be consistently used throughout the application. It creates visual consistency and provides a strong brand identity for Autopos Apps. Moreover, the design system ensures that the user interface will look and function well on various devices.`,
+        image4:`${autoposapps4}`,
+        caption4:'Design System & Assets',
+
+        process5:'Mockup',
+        description5:`After the design system has been established, I begin creating mockups, which are the final visual designs of the application. Mockups are comprehensive representations of the user interface, including design elements, illustrations, and images. This is the stage where I apply all the design system elements into the final design of the application. Mockups also encompass aspects such as animations, interactions, and responsiveness that bring the application to life.`,
+        image5:`${autoposapps6}`,
+        caption5:'Some parts of the mockup',
+
+        process6:'Test',
+        description6:`In the testing process of Autopos Apps following its launch on the Playstore, I conducted tests that encompassed various different devices. This included testing on Sunmi and Newland terminals, commonly used in retail businesses, as well as testing on tablet displays. The goal was to ensure that the application functions effectively across diverse devices, including different hardware and screen sizes. During testing, I examined the application's performance, functionality, user interface responsiveness, as well as potential issues or inconsistencies. The result is a confidence that Autopos Apps can be accessed and used smoothly on various devices, supporting our vision to provide sophisticated and user-friendly sales management tools to business owners.`,
+        image6:`${autoposapps7}`,
+        caption6:'Testing on Sunmi POS Terminal',
+      },
+      {
+        title:'Result',
+        description:'The mobile Autopos application has been launched and is available for download through the Playstore platform. The launch process involved hard work from the entire team, from planning to development, and ultimately monitoring the application in a production environment. Users can now easily access the application through their devices. We are proud to announce that Autopos Apps has received a 4.7-star rating on Playstore. This is a positive indication of the initial user response to the application. We greatly appreciate the support and feedback from users who have given high ratings and positive reviews, motivating us to continually improve and update the application.',
+        image:`${autoposapps3}`,
+        caption:'Playstore Autopost',
+      },
+    ]
+  },
+  {
+    id:2,
     tipe:'WEBSITE',
     link:'http://www.slashtheory.com',
     client: 'Slashtheory',
     summary: 'Slashtheory is an Indian company engaged in the digital design and IT industry. This company application development, as well as iOS and Android application development.',
     image: `${slashtheory}`,
     year: '2020',
+    color: 'blue-700',
+    hover:'hoverBlue',
+    shadowBlue: 'shadowBlue',
+    stripText: 'bg-blue-700',
     preview:{
       title:'Slashtheory, web design technology services from India.',
       description:'This project is the first development of the Slashtheory website. Slashtheory is an Indian company engaged in the digital design and IT industry. This company provides several services such as UI/UX design, full stack web application development, as well as iOS and Android application development. I got this project through the behance platform, then the client and I made more intense contact via WhatsApp. Initially the client asked me to design logos, business cards and infographics for his company, in the end the client also asked for UI/UX design services and development with WordPress.',
@@ -225,7 +320,7 @@ const projects = [
     ]
   },
   {
-    id:2,
+    id:3,
     tipe:'WEBSITE',
     link:'https://muhsinin.erje.or.id/',
     year: '2020',
@@ -333,111 +428,7 @@ const projects = [
       },
     ]
   },
-  {
-    id:3,
-    tipe:'MOBILE APPS',
-    client: 'Autopos Apps',
-    summary: 'Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.',
-    image: `${autoposapps}`,
-    year: '2023',
-    color: 'blue-700',
-    hover:'hoverBlue',
-    shadowBlue: 'shadowBlue',
-    stripText: 'bg-blue-700',
-    preview:{
-      title:'Autopos apps, integrated sales management mobile application.',
-      description:'Autopos Apps is one of 3 Autopos applications that are integrated with each other, the Autopos mobile application helps business owners to carry out sales management. This application will later be used on the waiter/cashier side to help carry out transactions from the customer to the waiter/cashier. Apart from that, this application can accept online orders, shift changes, order history, customer list management, ongoing transaction management.',
-      image:`${autoposapps2}`,
-      caption:'Autopos apps preview',
-      caption2:'Autopos application is available on Playstore'
-    },
-    content:[
-      {
-        title:'Problem',
-        description:'In the process of creating 3 integrated Autopos applications (CMS, mobile apps, QR Tablet Order) an application is needed as a bridge that connects the data side on the CMS side with the client, therefore an Autopos mobile application was created with the features needed to interact with the client such as ordering features, transactions, transaction history, Void, changing shifts, online ordering, etc. which directly connect clients (in this case, namely business actors such as cashiers/waiters/business owners) with customers.',
-      },
-      {
-        title:'Users & Audiences',
-        description:`Users of this application are business people who need a complete sales data management system. Which will make it easier for users to track sales information, product management, stock management, payment management, employee shift settings, etc. With this application, it is hoped that all business recording and monitoring can be seen in an integrated application system, namely Autopos.`
-      },
-      {
-        title:'Roles & Responsibilities',
-        list:[
-          'UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.',
-          'Tester. I am also did end to end test in this project.',
-        ],
-        description2:`The design that has been created is submitted to the development team via Asana. And every Friday there will be a meeting to discuss the week's progress and results.`
-      },
-      {
-        title:'Scope and Constraints',
-        description:'This is a website development project where a website is created from scratch. The Cheetah Erje team does not have a draft of the website content structure, does not collect assets, and I create the structure and design from scratch, so it requires more time and more intense discussion regarding the content structure. I also have to wait to get the latest photo assets from the ongoing activity cluster. So I developed the website structure from the information I received during the discussion. Luckily I got illustrations from friends in the illustrator community in Indonesia. The section list that I designed is:',
-        list:[
-          'Above the fold section',
-          'About us section',
-          'Introduction to the program section',
-          'Documentation section',
-          'Form section'
-        ],
-        description2:'And the features that I developed are :',
-        list2:[
-          'Send data from the form that has been filled in on the website to the Cheetah Erje admin email for follow-up.',
-          'Create an "Above the fold" video background.',
-        ],
-      },
-      {
-        title:'Process',
-        process:'Gathering requirements',
-        description:'Since my client and I are in the same city, Pekanbaru, we decided to start the project by meeting at a Cheetah Erje office. Talk about the problem, objectives, scope and budget. These are the notes I took after the meeting :',
-        list:[
-          'They want a clean, uncluttered UI that is easy to read and navigate',
-          'Blue is the primary color and white is the background',
-          'Key words of design inspiration: design donation, design foundation, autodebit.',
-        ],
-        image:`${cheetahimage3}`,
-        caption: 'Meeting Cheetah Erje',
-
-        process2:'Sitemap',
-        description2:`The first step I took when we had a deal was to create a sitemap so that everyone could see the overall structure of the website's sections. This sitemap is very useful to see how big it is in scope and also as my guide when designing pages. When the sitemap was complete, I sent it to them for approval before moving on to the next step, the wireframe.`,
-
-        process3:'Website for Inspiration',
-        description3:`I don't get inspiration from clients so all my inspiration is looking for myself for the look and feel. The inspiration I'm looking for is a website that uses a white background, is clean, and uses the main color blue. And this is the website I found.`,
-        image3:`${cheetahimage4}`,
-        caption3:'Sitemap',
-
-        process4:'Wireframe',
-        description4:`Wireframe Once the sitemap is approved, I move on to the wireframe process. In this wireframe, I'm using the content as well as the layout I'm proposing to present, so they know what the page is going to look like. I find this wireframe process very important so both me and the client can focus on the content first. They agreed with most of the above pages, with some minor revisions. The first is the hero section, initially I explained to put an image in the background in this section, but they want one of their activity clusters to be displayed in the form of a video as a background. They also wanted the induction section to use illustrations instead of pictures.`,
-        image4:`${cheetahimage5}`,
-        caption4:'Wireframe',
-
-        process5:'Define Design Colors',
-        description5:`Before heading to the mockup, I did some research on what colors I should use, based on what branding and company. Also I compared it with similar websites.`,
-        image5:`${cheetahimage6}`,
-        caption5:'Colors',
-
-        process6:'Mockup',
-        description6:`After some feedback about the wireframes in the figma files and their approval, I moved on to the mockup phase. I ended up using most of the layouts from wireframes which means they agreed with my design proposal. Fill in the images, create some design elements to emphasize the site's meaning, add color, and enhance the layout.`,
-        image6:`${cheetahimage7}`,
-        caption6:'Mockup',
-      },
-      {
-        title:'Result',
-        description:'With some feedback and revisions, the design was finally completed. Then the next stage is the development process.',
-        image:`${cheetah}`,
-        caption:'Mockup',
-      },
-      {
-        title:'Development',
-        description:'There are several features that are worked on at this stage, namely:',
-        list: [
-          'Create a video background in the hero section.',
-          'Create a form feature that will send data directly to the Cheetah Erje admin email'
-        ],
-        image:`${cheetahimage8}`,
-        caption:'Form after developing',
-        description2:'This process takes 3 days of development until the site is ready to go and now you can see it in action.'
-      },
-    ]
-  },
+  
   
 ]
 

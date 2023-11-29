@@ -53,3 +53,8 @@ export { default as cheetahimage8 } from "./cheetahimage8.jpg";
 // Autopos
 export { default as autoposapps } from "./autoposapps.jpg";
 export { default as autoposapps2 } from "./autoposapps2.jpg";
+export { default as autoposapps3 } from "./autoposapps3.jpg";
+export { default as autoposapps4 } from "./autoposapps4.jpg";
+export { default as autoposapps5 } from "./autoposapps5.png";
+export { default as autoposapps6 } from "./autoposapps6.jpg";
+export { default as autoposapps7 } from "./autoposapps7.jpg";

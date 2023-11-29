@@ -4,6 +4,7 @@ import Test from "./pages/Test";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
 import AnimatedCursor from "react-animated-cursor"
+import ScrollToTop from "./components/animation/ScrollToTop";
 
 function App() {
 
@@ -11,12 +12,13 @@ function App() {
   
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Navbar />
       {isLaptop && (
         <AnimatedCursor
           innerSize={10}
           outerSize={12}
-          color="255, 255, 255"
+          color="360, 100, 91"
           outerAlpha={0.1}
           innerScale={0.7}
           outerScale={8}
