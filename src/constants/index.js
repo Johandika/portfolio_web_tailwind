@@ -236,10 +236,6 @@ const projects = [
     summary: 'Slashtheory is an Indian company engaged in the digital design and IT industry. This company application development, as well as iOS and Android application development.',
     image: `${slashtheory}`,
     year: '2020',
-    color: 'blue-700',
-    hover:'hoverBlue',
-    shadowBlue: 'shadowBlue',
-    stripText: 'bg-blue-700',
     preview:{
       title:'Slashtheory, web design technology services from India.',
       description:'This project is the first development of the Slashtheory website. Slashtheory is an Indian company engaged in the digital design and IT industry. This company provides several services such as UI/UX design, full stack web application development, as well as iOS and Android application development. I got this project through the behance platform, then the client and I made more intense contact via WhatsApp. Initially the client asked me to design logos, business cards and infographics for his company, in the end the client also asked for UI/UX design services and development with WordPress.',
@@ -327,10 +323,6 @@ const projects = [
     client: 'Cheetah ERJE',
     summary: 'Cheetah is a special division of the Nadwah Islamiyah Foundation which was established to collect funds from all muhsinin who wish to donate.',
     image: `${cheetah}`,
-    color: 'green-700',
-    hover:'hoverGreen',
-    shadowGreen: 'shadowGreen',
-    stripText: 'bg-green-700',
     preview:{
       title:'Cheetah, religious social foundation web design for fundraising.',
       description:'This project is the first development of the Cheetah Erje landing page website. Cheetah is a special division of the Nadwah Islamiyah Foundation which was established specifically to collect funds from all muhsinin who wish to donate. The funds collected will be distributed to 4 activity clusters under the auspices of the Nadwah Islamiyah foundation, namely the Raudhatul Jannah Pekanbaru Mosque, the Baitussalam Mosque and Islamic Boarding School, the Tree of Merit, and the Tahfidz Akhawat House.',

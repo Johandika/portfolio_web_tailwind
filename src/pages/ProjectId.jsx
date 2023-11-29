@@ -7,6 +7,17 @@ import { projects } from "../constants";
 import Preview from "../components/Preview";
 import Button from "../components/Button";
 
+// const topics = [
+//   {
+//     title: item?.title,
+//     descriptions: [item?.description, item?.description2, item?.description3, ...],
+//     lists: [item.list, item.list2, item.list3, ...],
+//     processes: [item.process, item.process2, item.process3, ...],
+//     images: [{ src: item.image, caption: item.caption }, { src: item.image2, caption: item.caption2 }, ...]
+//   },
+// ];
+
+
 const ProjectId = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -46,6 +57,7 @@ console.log(project.link)
           <div className="gap-8 flex flex-col">
             {project?.content?.map((item) => (
               <Topic 
+              //  key={item?.title} topic={topics[0]}
                 key={item?.title} title={item?.title} 
                 description={item?.description}
                 description2={item?.description2 ? item.description2:null}
@@ -77,7 +89,6 @@ console.log(project.link)
                 image4={item.image4 ? item.image4 : null}
                 image5={item.image5 ? item.image5 : null}
                 image6={item.image6 ? item.image6 : null}
-                
               />
             ))}
             {project.link && ( <Button text={project.link} className={'text-white tracking-widest self-center'} onClick={handleClick}/> )

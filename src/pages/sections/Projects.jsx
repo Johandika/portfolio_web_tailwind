@@ -22,24 +22,36 @@ const Projects = () => {
       <h2 className="font-SpaceMono text-4xl underline">Selected Projects</h2>
 
       {/* Card Projects */}
-      {projects.slice(0, displayData).map((project) => (
-        <ProjectCard
-          key={project.id}
-          tipe={project.tipe}
-          client={project.client}
-          summary={project.summary}
-          image={project.image}
-          colorButton={project.color}
-          onClick={() => handleClick(project.id)}
-          {...{
-            hoverBlue: project.hover === "hoverBlue",
-            hoverGreen: project.hover === "hoverGreen",
-            shadowBlue: project.shadowBlue === "shadowBlue",
-            shadowGreen: project.shadowGreen === "shadowGreen",
-            stripText: project.stripText,
-          }}
-        />
-      ))}
+      {projects.slice(0, displayData).map((project,index) => {
+
+          //kondisi agar setiap index pertama kedua dan ketiga warnanya merah hijau biru seterusnya
+          const styles = [
+            { color: false, hover: false, shadowBlue: false, shadowGreen: false, stripText: false },
+            { color: 'green-700', hover: 'hoverGreen', shadowBlue: false, shadowGreen: 'shadowGreen', stripText: 'bg-green-700' },
+            { color: 'blue-700', hover: 'hoverBlue', shadowBlue: 'shadowBlue', shadowGreen: false, stripText: 'bg-blue-700' },
+          ];
+
+          const { color, hover, shadowBlue, shadowGreen, stripText } = styles[index % 3];
+        
+          return (
+            <ProjectCard
+              key={project.id}
+              tipe={project.tipe}
+              client={project.client}
+              summary={project.summary}
+              image={project.image}
+              colorButton={color}
+              onClick={() => handleClick(project.id)}
+              {...{
+                hoverBlue: hover === "hoverBlue",
+                hoverGreen: hover === "hoverGreen",
+                shadowBlue: shadowBlue === "shadowBlue",
+                shadowGreen: shadowGreen === "shadowGreen",
+                stripText: stripText,
+              }}
+            />
+          )
+        })}
 
       <Button
         text={"Show More"}

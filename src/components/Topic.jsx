@@ -1,6 +1,40 @@
 import Image from "./Image"
 
-const Topic = ({title,description, description2, description3,description4,description5,description6,list, list2,list3,list4,list5,list6, process, process2, process3, process4, process5,process6,image,image2,image3,image4,image5,image6,caption,caption2,caption3,caption4,caption5,caption6}) => {
+// const Topic = ({ topic }) => {
+//   return (
+//     <section className="gap-4 flex flex-col">
+//       <h2 className="text-2xl text-Black font-bold">{topic.title}</h2>
+//       {topic.descriptions.map((desc, index) => (
+//         desc && <p key={index} className="text-gray-500 leading-8 text-justify">{desc}</p>
+//       ))}
+//       {topic.lists.map((list, index) => (
+//         list && (
+//           <ol key={index} className="text-gray-500 leading-8 text-justify ml-0 sm:ml-6">
+//             {list.map((item, idx) => (
+//               <li key={idx} className="gap-7 flex flex-row relative">
+//                 <span className="w-5  h-5 flex justify-center items-center text-white absolute bg-red-600 rounded-full top-1 text-xs">{idx + 1}.</span>
+//                 <p className=" pl-8">{item}</p>
+//               </li>
+//             ))}
+//           </ol>
+//         )
+//       ))}
+//       {topic.images.map((img, index) => (
+//         img.src && <Image key={index} medium image={img.src} caption={img.caption}/>
+//       ))}
+//     </section>
+//   )
+// }
+
+// export default Topic;
+
+const Topic = ({
+  title,
+  description, 
+  description2, 
+  description3,
+  description4,description5,description6,list, list2,list3,list4,list5,list6, process, process2, process3, process4, process5,process6,image,image2,image3,image4,image5,image6,caption,caption2,caption3,caption4,caption5,caption6
+}) => {
   return (
     <section className="gap-4 flex flex-col" >
       <h2 className="text-2xl text-Black font-bold">{title}</h2>
