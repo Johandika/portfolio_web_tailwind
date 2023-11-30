@@ -46,6 +46,10 @@ import {
   autoposapps5,
   autoposapps6,
   autoposapps7,
+  pmiweb,
+  pmiweb1,
+  pmiweb2,
+  pmiweb3,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -238,7 +242,7 @@ const projects = [
     year: '2020',
     preview:{
       title:'Slashtheory, web design technology services from India.',
-      description:'This project is the first development of the Slashtheory website. Slashtheory is an Indian company engaged in the digital design and IT industry. This company provides several services such as UI/UX design, full stack web application development, as well as iOS and Android application development. I got this project through the behance platform, then the client and I made more intense contact via WhatsApp. Initially the client asked me to design logos, business cards and infographics for his company, in the end the client also asked for UI/UX design services and development with WordPress.',
+      description:'This project is the first development of the Slashtheory website. Slashtheory is an Indian company engaged in the digital design and IT industry. This company provides several services such as UI/UX design, full stack web application development, as well as iOS and Android application development. I got this project through the behance platform, then the client and I made more intense contact via WhatsApp. Initially the client asked me to design logos, business cards and infographics for his company, in the end the client also asked for UI/UX design services and development with WordPress',
       image:`${slashtheoryimage1}`,
       caption:'Slashtheory Web Design',
       caption2:'Some of the initial conversations with clients on behance and then continued to WhatsApp.'
@@ -317,6 +321,98 @@ const projects = [
   },
   {
     id:3,
+    tipe:'WEBSITE',
+    link:'https://www.pmicorp.id/',
+    client: 'PT Putra Mandiri Informatika',
+    summary: 'PT. Putra Mandiri Informatika focuses on distributing hardware such as cash registers and payment instruments (EDC).',
+    image: `${pmiweb}`,
+    year: '2023',
+    preview:{
+      title:'Company website, PT Putra Mandiri Informatika ',
+      description:`PT. Putra Mandiri Informatika is a distributor of Point of Sales devices and products, providing operational solutions for business development through IoT. In 2023, I have the opportunity to redesign the company's website with a fresh and modern look, including a mobile-friendly design. The website will consist of a total of 34 pages, available in two versions: blue and orange. Most of the pages will showcase products for sale, including sales tools like POS machines.`,
+      image:`${pmiweb1}`,
+      caption:'PT Putra Mandiri Informatika (PMI) Website',
+      caption2:'Two design themes with a touch of orange and blue.'
+    },
+    content:[
+      {
+        title:'Problem',
+        description:'PT. Putra Mandiri Informatika, which has been established since 2017 in Cengkareng, Jakarta, Indonesia, has been steadily growing with increasing hardware sales each year, covering shipments to all regions of Indonesia. To honor our loyal customers and make it easier for them to access PMI product information, a redesign of the PMI website is needed, as it was still relatively simple at that time. As a UI/UX Designer, I was tasked with the job of redesigning this website.',
+        image: `${pmiweb2}`
+      },
+      {
+        title:'Users & Audiences',
+        description:`It is crucial to identify the various user groups and audiences who will interact with the website. These users and audiences can be categorized as follows:`,
+        list:[
+          'Customers: PT. Putra Mandiri Informatika serves a diverse range of customers, including businesses and individuals who are looking for Point of Sales devices and related hardware. These customers may have different needs, such as browsing products, obtaining pricing information, or contacting customer support.',
+          `Business Owners: Small to large business owners who are interested in upgrading their POS systems or purchasing EDC devices for their establishments. They seek information on the reliability and suitability of PMI's products for their specific business needs.`,
+          `IT Professionals: IT specialists responsible for selecting and implementing hardware solutions within their organizations. They require detailed technical information, specifications, and compatibility details for seamless integration.`,
+          `Potential Partners: Companies or individuals interested in partnering with PT. Putra Mandiri Informatika for distribution or collaboration. They need to access relevant business-related information and contact details.`,
+          `General Visitors: Individuals who may stumble upon the website out of curiosity or by chance. They may not have specific intentions but should find the website user-friendly and informative.`,
+          `Existing Customers: The website should also cater to existing customers who may seek support, updates, or additional products.`
+        ],
+        description2:`Understanding these diverse user groups and their specific needs is essential to ensure that the redesigned website effectively addresses their requirements and provides a positive user experience.`
+      },
+      {
+        title:'Roles & Responsibilities',
+        description:`In the PT. Putra Mandiri Informatika website redesign project, roles and responsibilities need to be clearly defined to ensure the smoothness and success of the project. Here is a breakdown of the key roles and responsibilities involved in this project:`,
+        list:[
+          'UI/UX Designer (Myself): Responsible for directing the design of a responsive and engaging user interface and experience. This involves determining the navigation structure, color choices, and other visual aspects that will meet the diverse user needs.',
+          `Web Development Team: The web development team will be responsible for implementing the designed features. They must ensure that the website functions properly, is responsive, and compatible with various devices and browsers.`,
+          `Content Team: The content team will manage the content to be displayed on the website. This includes generating and editing text, images, and other multimedia content required for product information, customer support, and other communications.`,
+          `Project Management Team: Responsible for coordinating all aspects of the project, overseeing the schedule, budget, and risks. They will ensure that the project proceeds according to the plan and achieves the established goals.`,
+          `Stakeholders and Relevant Parties: Stakeholders and relevant parties, including company management and other departments involved in the project, will provide input, approval, and necessary guidance throughout all project stages.`,
+        ],
+        description2:`The importance of a clear understanding of the roles and responsibilities of each party is to ensure that the project runs smoothly and efficiently. With good collaboration among all parties involved, it is expected that this website redesign project will be successful and meet the expectations of customers and users.`
+      },
+      {
+        title:'Scope and Constraints',
+        description:'Scope :',
+        description2:`The scope of this project encompasses the complete redesign of PT. Putra Mandiri Informatika's website. This includes reimagining the user interface and experience to create an engaging and user-friendly platform. The website will consist of approximately 34 pages, available in two color variations: blue and orange. It will showcase the company's products, particularly sales tools like POS machines, and provide essential information for various user groups.
+
+        The scope also involves ensuring the website is responsive and compatible with various devices and browsers. It will be designed with a mobile-friendly layout to cater to users accessing the site from smartphones and tablets.`,
+        description3:'Constraints:',
+        list3:[
+          'Time Constraints: The project has a set timeline, and adherence to it is crucial to meet the desired launch date.',
+          `Technical Constraints: The website's redesign must work within the existing technical infrastructure and limitations.`,
+          `Content Constraints: Content creation and management are subject to resource availability and timelines.`,
+          'Compatibility Constraints: Ensuring compatibility with a wide range of devices and browsers may pose challenges.',
+          `Approval Constraints: The project's progress and design choices will require approval from stakeholders and relevant parties.`,
+        ],
+        description4:`Navigating these constraints effectively is essential to deliver a successful website redesign project that meets the company's objectives and user expectations.`
+      },
+      {
+        title:'Process',
+        process:'Product Knowledge',
+        description:`In this phase, I communicate with stakeholders and the company's asset designers to gather information about the style and layout preferences, as well as the content that will be displayed on each page. This is the initial step in designing the website.`,
+       
+        process2:'Sitemap',
+        description2:`After the initial ideas are formed, the next step is to design the sitemap. This is the overall structure of how pages will be interconnected and organized within the website.`,
+
+        process3:'Wireframe',
+        description3:`A wireframe is the initial step in designing the user interface. It is a basic, non-visual representation that outlines the page layout and key elements.`,
+        image3:`${pmiweb3}`,
+        caption3:'Preview of some of the wireframes that have been created',
+
+        process4:'Design Inspiration',
+        description4:`At this stage, the team will seek design inspiration from external sources, such as other websites, current design trends, and other creative ideas that can enrich the final design.`,
+
+        process5:'Design System',
+        description5:`A design system is a guideline that details design elements such as colors, typography, icons, and other components that will be used throughout the website. It creates consistency in the overall look and feel of the website.`,
+
+        process6:'Mockup',
+        description6:`A mockup is a complete visual representation of the final website design. It includes all design elements, colors, and layouts that users will see.`,
+      },
+      {
+        title:'Result',
+        description:'The mobile Autopos application has been launched and is available for download through the Playstore platform. The launch process involved hard work from the entire team, from planning to development, and ultimately monitoring the application in a production environment. Users can now easily access the application through their devices. We are proud to announce that Autopos Apps has received a 4.7-star rating on Playstore. This is a positive indication of the initial user response to the application. We greatly appreciate the support and feedback from users who have given high ratings and positive reviews, motivating us to continually improve and update the application.',
+        image:`${autoposapps3}`,
+        caption:'Playstore Autopost',
+      },
+    ]
+  },
+  {
+    id:4,
     tipe:'WEBSITE',
     link:'https://muhsinin.erje.or.id/',
     year: '2020',

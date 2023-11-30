@@ -26,7 +26,7 @@ const Projects = () => {
 
           //kondisi agar setiap index pertama kedua dan ketiga warnanya merah hijau biru seterusnya
           const styles = [
-            { color: false, hover: false, shadowBlue: false, shadowGreen: false, stripText: false },
+            { color: false, hover: false, shadowBlue: false, shadowGreen: false, stripText: 'bg-RedDarkest' },
             { color: 'green-700', hover: 'hoverGreen', shadowBlue: false, shadowGreen: 'shadowGreen', stripText: 'bg-green-700' },
             { color: 'blue-700', hover: 'hoverBlue', shadowBlue: 'shadowBlue', shadowGreen: false, stripText: 'bg-blue-700' },
           ];
