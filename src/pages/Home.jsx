@@ -24,7 +24,7 @@ const Home = () => {
   
   return (
     <>
-     <GrainyTexture className={`h-screen w-screen fixed opacity-20 [filter:url('#grainyTexture')] bg-RedDarkest -z-20`}/>
+     {/* <GrainyTexture className={`h-screen w-screen fixed opacity-20 [filter:url('#grainyTexture')] bg-RedDarkest -z-20`}/> */}
     <div ref={ref} className="font-Poppins sm:pt-[80px] pt-[60px]">
       <BackgroundAnimation
         style={{
