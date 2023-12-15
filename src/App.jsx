@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Test from "./pages/Test";
+import Test from "./pages/UnderConstruction";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
 import AnimatedCursor from "react-animated-cursor"
 import ScrollToTop from "./components/animation/ScrollToTop";
+import UnderConstruction from "./pages/UnderConstruction";
 
 function App() {
 
@@ -49,7 +50,23 @@ function App() {
         />
         <Route
           path="/test"
-          element={<Test />}
+          element={<UnderConstruction />}
+        />
+        <Route
+          path="/products/logo"
+          element={<UnderConstruction />}
+        />
+        <Route
+          path="/products/fonts"
+          element={<UnderConstruction />}
+        />
+        <Route
+          path="/products/code"
+          element={<UnderConstruction />}
+        />
+        <Route
+          path="/products/uidesign"
+          element={<UnderConstruction />}
         />
       </Routes>
     </BrowserRouter>

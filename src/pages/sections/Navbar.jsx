@@ -8,15 +8,16 @@ import { PiBirdBold } from 'react-icons/pi';
 import { FaReact } from 'react-icons/fa';
 import { MdOutlineDesignServices } from 'react-icons/md';
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { useNavigate } from 'react-router-dom';
 
 
 const navigation = [
   { name: "Home", href: "/", current: location.pathname === "/", multi:false },
   { name: "Products", multi:true, items:[
-    {name: "Logo", href: "/", icon:<PiBirdBold /> ,  current: location.pathname === "/"},
-    {name: "Fonts", href: "/",icon: <AiOutlineFontSize />, current: location.pathname === "/"},
-    {name: "Code", href: "/",icon: <FaReact />, current: location.pathname === "/"},
-    {name: "UI Design", href: "/",icon: <MdOutlineDesignServices />, current: location.pathname === "/"},
+    {name: "Logo", href: "/products/logo", icon:<PiBirdBold /> ,  current: location.pathname === "/"},
+    {name: "Fonts", href: "/products/fonts",icon: <AiOutlineFontSize />, current: location.pathname === "/"},
+    {name: "Code", href: "/products/code",icon: <FaReact />, current: location.pathname === "/"},
+    {name: "UI Design", href: "/products/uidesign",icon: <MdOutlineDesignServices />, current: location.pathname === "/"},
   ]},
 ];
 
@@ -27,6 +28,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const { scrollYProgress } = useScroll();
   const [showNavbar, setShowNavbar] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     return scrollYProgress.onChange((latest) => {
@@ -87,7 +89,7 @@ export default function Navbar() {
                         item.multi === false ? (
                           <a
                             key={item.name}
-                            href={item.href}
+                            onClick={()=>navigate(item.href)}
                             className={classNames(
                               item.current
                                 ? "bg-RedDarkest/20 text-white"
@@ -119,7 +121,7 @@ export default function Navbar() {
                               leaveTo="transform opacity-0 scale-95"
                               // className='absolute'
                             >
-                              <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+                              <Menu.Items className="absolute right-0 mt-2 w-36 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                                 <div className="px-1 py-1 ">
                                 {item.items.map((submenu) => (
                                     <Menu.Item key={submenu.name}>
@@ -128,6 +130,7 @@ export default function Navbar() {
                                           className={`${
                                             active ? 'bg-RedDarkest text-white' : 'text-Black'
                                           } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                          onClick={()=> navigate(submenu.href)}
                                         >
                                           {active ? (
                                             <span
