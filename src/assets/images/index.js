@@ -65,3 +65,5 @@ export { default as pmiweb2 } from "./pmiweb2.jpg";
 export { default as pmiweb3 } from "./pmiweb3.jpg";
 export { default as pmiweb4 } from "./pmiweb4.jpg";
 export { default as pmiweb5 } from "./pmiweb5.jpg";
+// Logo
+export { default as ccarrot } from "./logo/ccarrot.jpg";

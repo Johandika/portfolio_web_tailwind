@@ -52,6 +52,7 @@ import {
   pmiweb3,
   pmiweb4,
   pmiweb5,
+  ccarrot,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -609,4 +610,28 @@ const workExperiences = [
   },
 ];
 
-export { skillDesign, skills, skillsTwo, projects, workExperiences };
+const logoForSale = [
+  {
+    name: "C Carrot Logo",
+    image: ccarrot,
+    price: 250,
+    available: true,
+    link: "https://www.logoground.com/logo.php?id=448190",
+  },
+  {
+    name: "C Carrot Logos",
+    image: tailwind,
+    price: 250,
+    available: false,
+    link: "https://www.logoground.com/logo.php?id=448190",
+  },
+];
+
+export {
+  skillDesign,
+  skills,
+  skillsTwo,
+  projects,
+  workExperiences,
+  logoForSale,
+};

@@ -6,7 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 
-
 const HeroSection = () => {
   const handleClickWhatsapp = () => {
     window.open(
@@ -37,18 +36,12 @@ const HeroSection = () => {
     );
   };
 
-  
-  
   return (
-    <Container  
+    <Container
       className={
         " flex flex-col sm:flex-row w-full h-fit sm:h-screen  justify-center items-center pt-5 sm:pt-0"
       }
     >
-
-
-      
-
       {/* Container kiri */}
       <div className="flex-1 my-auto flex flex-col gap-4 sm:gap-5  order-2 sm:order-1">
         <h2 className="text-lg sm:text-2xl font-SpaceMono">
@@ -59,7 +52,11 @@ const HeroSection = () => {
           text={["Fullstack Javascript", "UI/UX Designer"]}
         />
         <p className="leading-relaxed">
-        I am from Indonesia and have been pursuing a career in visual design for the past 3 years. Currently, I am expanding my career skills into website development and have worked on several projects as a fullstack developer. Design and programming are my passions, and I am very excited about the prospect of collaborating with you!
+          I am from Indonesia and have been pursuing a career in visual design
+          for the past 3 years. Currently, I am expanding my career skills into
+          website development and have worked on several projects as a fullstack
+          developer. Design and programming are my passions, and I am very
+          excited about the prospect of collaborating with you!
         </p>
         <div className="flex flex-row flex-wrap gap-5">
           <Button

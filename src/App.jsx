@@ -3,17 +3,17 @@ import Home from "./pages/Home";
 import Test from "./pages/UnderConstruction";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
-import AnimatedCursor from "react-animated-cursor"
+import AnimatedCursor from "react-animated-cursor";
 import ScrollToTop from "./components/animation/ScrollToTop";
 import UnderConstruction from "./pages/UnderConstruction";
+import Logo from "./pages/Logo";
 
 function App() {
-
   const isLaptop = window.innerWidth >= 768;
-  
+
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
       <Navbar />
       {isLaptop && (
         <AnimatedCursor
@@ -25,17 +25,17 @@ function App() {
           outerScale={8}
           trailingSpeed={8}
           clickables={[
-            'a',
+            "a",
             'input[type="text"]',
             'input[type="email"]',
             'input[type="number"]',
             'input[type="submit"]',
             'input[type="image"]',
-            'label[for]',
-            'select',
-            'textarea',
-            'button',
-            '.link',
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
           ]}
         />
       )}
@@ -54,7 +54,7 @@ function App() {
         />
         <Route
           path="/products/logo"
-          element={<UnderConstruction />}
+          element={<Logo />}
         />
         <Route
           path="/products/fonts"
