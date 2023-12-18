@@ -13,7 +13,7 @@ const Logo = () => {
       <h1 className="flex justify-center font-SpaceMono text-4xl underline mt-32">
         Logo Gallery
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 mt-14">
+      <div className="px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  mt-14">
         {logoForSale.map((logo, index) => (
           <figure key={logo.name}>
             {/* Modal Full gambar */}
@@ -48,7 +48,7 @@ const Logo = () => {
               </div>
             )}
             <div className="bg-gray-800  p-3 rounded-md">
-              <div className="h-40 w-full bg-gray-200 rounded-md overflow-hidden items-center flex relative">
+              <div className="h-48 sm:h-40 w-full bg-gray-200 rounded-md overflow-hidden items-center flex relative">
                 {!logo.available && (
                   <div className="bg-RedDarkest/90 absolute h-12 w-40 flex justify-center items-center font-bold tracking-widest -rotate-45 -left-12 top-2 text-lg">
                     SOLD
