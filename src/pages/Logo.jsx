@@ -13,7 +13,7 @@ const Logo = () => {
       <h1 className="flex justify-center font-SpaceMono text-4xl underline mt-32">
         Logo Gallery
       </h1>
-      <div className="grid grid-cols-4 gap-6 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 mt-14">
         {logoForSale.map((logo, index) => (
           <figure key={logo.name}>
             {/* Modal Full gambar */}
