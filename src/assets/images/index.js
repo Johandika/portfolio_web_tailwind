@@ -112,7 +112,7 @@ export { default as padlockshield } from "./logo/padlockshield.jpg";
 export { default as pfire } from "./logo/pfire.jpg";
 export { default as pflag } from "./logo/pflag.jpg";
 export { default as phoenix } from "./logo/phoenix.jpg";
-export { default as ramericanhome } from "./logo/ramericanhome.jpg";
+export { default as americanhome } from "./logo/americanhome.jpg";
 export { default as rhome } from "./logo/rhome.jpg";
 export { default as rlogo } from "./logo/rlogo.jpg";
 export { default as runningman } from "./logo/runningman.jpg";
