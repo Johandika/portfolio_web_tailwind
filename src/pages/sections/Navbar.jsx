@@ -110,7 +110,7 @@ export default function Navbar() {
                     <div className="flex space-x-4">
                       {navigation.map((item) =>
                         item.multi === false ? (
-                          <a
+                          <div
                             key={item.name}
                             onClick={() => navigate(item.href)}
                             className={classNames(
@@ -122,7 +122,7 @@ export default function Navbar() {
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
-                          </a>
+                          </div>
                         ) : (
                           <Menu
                             as="div"
