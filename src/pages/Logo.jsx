@@ -19,13 +19,13 @@ const Logo = () => {
             {/* Modal Full gambar */}
             {showModal && (
               <div
-                className="z-50 absolute inset-0 bg-Black/70 flex justify-center items-center"
+                className="z-50 fixed inset-0 bg-Black/70 flex justify-center items-center"
                 onClick={() => {
                   setShowModal(false);
                   setIndexModalActive(null);
                 }}
               >
-                <div className="h-4/6 w-3/6 bg-yellow-700 relative ">
+                <div className="h-2/6 sm:h-3/6 lg:h-4/6 w-5/6 sm:w-4/6 lg:w-3/6 bg-yellow-700 relative ">
                   {/* Badge Sold */}
                   <div className="overflow-hidden w-full h-full absolute">
                     {!logoForSale[indexModalActive].available && (
