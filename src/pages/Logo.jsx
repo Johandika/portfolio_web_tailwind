@@ -8,6 +8,15 @@ const Logo = () => {
   const [showModal, setShowModal] = useState(false);
   const [indexModalActive, setIndexModalActive] = useState(null);
 
+  const handleClick = (logo) => {
+    logo.link
+      ? window.open(logo.link, "_blank")
+      : window.open(
+          `https://api.whatsapp.com/send/?phone=6282370323310&text=Hello+Johandika%2C+I+would+like+to+purchase+your+logo+named+:+'${logo.name}'+for+USD+${logo.price}.&type=phone_number&app_absent=0`,
+          "_blank"
+        );
+  };
+
   return (
     <Container className="font-Poppins">
       <h1 className="flex justify-center font-SpaceMono text-4xl underline mt-32">
@@ -95,7 +104,7 @@ const Logo = () => {
                       ? "pointer-events-none bg-gray-950 text-gray-400"
                       : "bg-RedDarkest"
                   }`}
-                  onClick={() => window.open(logo.link, "_blank")}
+                  onClick={() => handleClick(logo)}
                 >
                   {logo.available ? "Buy" : "Sold"}
                 </button>

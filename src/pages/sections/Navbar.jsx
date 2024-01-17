@@ -103,6 +103,7 @@ export default function Navbar() {
                       className="h-14 sm:h-[70px] w-auto"
                       src={logo}
                       alt="Your Company"
+                      onClick={() => navigate("/")}
                     />
                   </div>
                   {/* Menu Web Tampilan Full */}
