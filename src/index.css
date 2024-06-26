@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
 @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-Regular.ttf") format("truetype");
@@ -51,3 +47,4 @@ body::before {
   background: #0d0409;
   filter: url(#grainyTexture);
 }
+

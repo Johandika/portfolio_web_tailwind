@@ -23,7 +23,6 @@ const Projects = () => {
 
       {/* Card Projects */}
       {projects.slice(0, displayData).map((project,index) => {
-
           //kondisi agar setiap index pertama kedua dan ketiga warnanya merah hijau biru seterusnya
           const styles = [
             { color: false, hover: false, shadowBlue: false, shadowGreen: false, stripText: 'bg-RedDarkest' },
@@ -53,12 +52,14 @@ const Projects = () => {
           )
         })}
 
-      <Button
-        text={"Show More"}
-        onClick={loadMore}
-        outline
-        className="font-SpaceMono uppercase  text-lg tracking-widest text-white self-center rounded-md py-2 px-4"
-      />
+      {displayData < projects.length && (
+        <Button
+          text={"Show More"}
+          onClick={loadMore}
+          outline
+          className="font-SpaceMono uppercase text-lg tracking-widest text-white self-center rounded-md py-2 px-4"
+        />
+      )}
     </Container>
   );
 };

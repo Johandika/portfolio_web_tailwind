@@ -1,7 +1,7 @@
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 import TypedText from "../../components/TypedText";
-import johandika from "../../assets/images/johandika.png";
+import johandika from "../../assets/images/johandika.webp";
 import { FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -88,11 +88,11 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Container Kanan */}
-      <div className="flex-1 flex justify-center items-center order-1 sm:order-2">
+      <div className="flex-1 flex justify-center items-center order-1 sm:order-2 ">
         <img
           src={johandika}
           alt="Johandika Syahputra Lubis"
-          className="w-[70%] sm:w-fit"
+          className="sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover "
         />
       </div>
     </Container>

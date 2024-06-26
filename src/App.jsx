@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Test from "./pages/UnderConstruction";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
 import AnimatedCursor from "react-animated-cursor";
