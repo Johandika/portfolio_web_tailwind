@@ -5,8 +5,25 @@ import johandika from "../../assets/images/johandika.webp";
 import { FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
+  const [openButtonActive, setOpenButtonActive] = useState(false)
+  const dropdownRef = useRef(null);
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenButtonActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  
   const handleClickWhatsapp = () => {
     window.open(
       "https://api.whatsapp.com/send/?phone=6282370323310&text=Hallo+Johandika%2C+I+visit+from+your+website&type=phone_number&app_absent=0",
@@ -29,9 +46,16 @@ const HeroSection = () => {
     );
   };
 
-  const handleResume = () => {
+  const handleResumeDesigner = () => {
     window.open(
       "https://drive.google.com/file/d/10xKtVOFb_JZo0tmNucM6WWD9m9IJv58X/view",
+      "_blank"
+    );
+  };
+
+  const handleResumeDeveloper = () => {
+    window.open(
+      "https://drive.google.com/file/d/1uTxxnsihdUe0QbwYbqBtX72hkYaOMzWd/view?usp=drive_link",
       "_blank"
     );
   };
@@ -63,11 +87,21 @@ const HeroSection = () => {
             text={"Get Showcase"}
             onClick={handleShowcase}
           />
-          <Button
-            text={"Get Resume"}
-            onClick={handleResume}
-            outline
-          />
+          <div
+          className=" relative px-4 sm:px-8 py-4 sm:py-4 rounded-lg ring-1 hover:bg-RedDarkest/10 ring-RedDarkest"
+            onClick={()=>setOpenButtonActive(true)}
+            ref={dropdownRef}
+          >
+            Get Resume
+            {openButtonActive && 
+              (<div className="left-0 top-0 w-32 sm:w-40   bg-black absolute rounded-lg ">
+                  <button className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 border-b-[1px] rounded-t-lg " onClick={handleResumeDesigner}>Designer</button>
+                  <button className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 rounded-b-lg" onClick={handleResumeDeveloper}>Developer</button>
+              </div>)
+            }
+            {console.log('openButtonActive',openButtonActive)}
+          </div>
+           
         </div>
         <div className="flex flex-row gap-4">
           <FaGithub
