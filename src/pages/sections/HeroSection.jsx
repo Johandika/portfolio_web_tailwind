@@ -55,7 +55,7 @@ const HeroSection = () => {
 
   const handleResumeDeveloper = () => {
     window.open(
-      "https://drive.google.com/file/d/1uTxxnsihdUe0QbwYbqBtX72hkYaOMzWd/view?usp=drive_link",
+      "https://drive.google.com/file/d/1S09i-9F3cT__wNTW9wi9lpHPAHGikRDi/view?usp=sharing",
       "_blank"
     );
   };
