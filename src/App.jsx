@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
+import ProjectProgrammerId from "./pages/ProjectProgrammerId";
 import AnimatedCursor from "react-animated-cursor";
 import ScrollToTop from "./components/animation/ScrollToTop";
 import UnderConstruction from "./pages/UnderConstruction";
@@ -46,6 +47,10 @@ function App() {
         <Route
           path="/project/:id"
           element={<ProjectId />}
+        />
+        <Route
+          path="/project-programmer/:id"
+          element={<ProjectProgrammerId />}
         />
         <Route
           path="/test"

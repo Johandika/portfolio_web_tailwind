@@ -3,16 +3,16 @@ import { useParams } from "react-router-dom";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import Topic from "../components/Topic";
-import { projects } from "../constants";
+import { projectProgrammer } from "../constants";
 import Preview from "../components/Preview";
 import Button from "../components/Button";
 
 
-const ProjectId = () => {
+const ProjectProgrammerId = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const project = projects.find(project => project.id === parseInt(id, 10));
+  const project = projectProgrammer.find(project => project.id === parseInt(id, 10));
   
   const handleBackClick = () => {
     navigate(`/`)
@@ -24,6 +24,33 @@ console.log(project.link)
     window.open(project.link, '_blank');
   };
 
+  if (!project) {
+    return (
+      <div className="font-Poppins pt-[80px] sm:pt-[90px] py-6">
+        <Container>
+          <div className="flex flex-col bg-white text-Black p-6 sm:p-10 gap-6">
+            <div
+              onClick={handleBackClick}
+              className="flex flex-row gap-2 items-center group self-start cursor-pointer"
+            >
+              <IoChevronBackCircleOutline
+                size={25}
+                className="text-gray-400 transition group-hover:scale-90 group-hover:text-RedDarkest"
+              />
+              <p className="text-gray-400 transition group-hover:text-RedDarkest">
+                Kembali
+              </p>
+            </div>
+            <div className="text-center">
+              <h1 className="text-2xl font-bold mb-4">Proyek Tidak Ditemukan</h1>
+              <p className="mb-6">Maaf, proyek dengan ID {id} tidak tersedia dalam database kami.</p>
+            </div>
+          </div>
+        </Container>
+      </div>
+    );
+  }
+  
   return (
     <div className="font-Poppins pt-[80px]  sm:pt-[90px] py-6">
       <Container>
@@ -45,7 +72,7 @@ console.log(project.link)
           <Preview header={project.preview.title} year={project.year} client={project.client} descriptionPreview={project.preview.description} image={project.image} image2={project.preview.image} caption={project.preview.caption} caption2={project.preview.caption2}/>
           {/* Content */}
           <div className="gap-8 flex flex-col">
-            {project?.content?.map((item) => (
+            {projectProgrammer?.content?.map((item) => (
               <Topic 
               //  key={item?.title} topic={topics[0]}
                 key={item?.title} title={item?.title} 
@@ -90,4 +117,4 @@ console.log(project.link)
   );
 };
 
-export default ProjectId;
+export default ProjectProgrammerId;
