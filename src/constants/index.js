@@ -31,6 +31,7 @@ import {
   slashtheoryimage3,
   slashtheoryimage4,
   slashtheoryimage5,
+  raudhatuljannah,
   cheetahimage1,
   cheetahimage2,
   cheetahimage3,
@@ -219,9 +220,9 @@ const skillDesign = [
 const projects = [
   {
     id: 1,
-    tipe: "MOBILE APPS",
+    tipe: "MOBILE APP",
     link: "https://www.autopos.id/",
-    client: "Autopos Apps",
+    client: "Autopos App",
     summary:
       "Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.",
     image: `${autoposapps}`,
@@ -607,6 +608,101 @@ const projects = [
         caption: "Form after developing",
         description2:
           "This process takes 3 days of development until the site is ready to go and now you can see it in action.",
+      },
+    ],
+  },
+];
+
+const projectProgrammer = [
+  {
+    id: 1,
+    tipe: "WEBSITE (UI/UX & Fullstack)",
+    linkDemo: "https://youtu.be/ifuOMV90iok",
+    link: "https://github.dev/Johandika/FrontSide-MasjidRaudhatulJannah",
+    link2: "hhttps://github.com/Johandika/Server-MasjidRaudhatulJannah",
+    link3: "https://github.com/Johandika/CMS-MasjidRaudhatulJannah",
+    client: "Raudhatul Jannah Islamic Center",
+    summary:
+      "Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.",
+    image: `${raudhatuljannah}`,
+    year: "2023",
+    preview: {
+      title: "Autopos apps, integrated sales management mobile application.",
+      description:
+        "Autopos Apps is one of 3 Autopos applications that are integrated with each other, the Autopos mobile application helps business owners to carry out sales management. This application will later be used on the waiter/cashier side to help carry out transactions from the customer to the waiter/cashier. Apart from that, this application can accept online orders, shift changes, order history, customer list management, ongoing transaction management.",
+      image: `${autoposapps2}`,
+      caption: "Autopos apps preview",
+      caption2: "Autopos application is available on Playstore",
+    },
+    content: [
+      {
+        title: "Problem",
+        description:
+          "In the process of creating 3 integrated Autopos applications (CMS, mobile apps, QR Tablet Order) an application is needed as a bridge that connects the data side on the CMS side with the client, therefore an Autopos mobile application was created with the features needed to interact with the client such as ordering features, transactions, transaction history, Void, changing shifts, online ordering, etc. which directly connect clients (in this case, namely business actors such as cashiers/waiters/business owners) with customers.",
+      },
+      {
+        title: "Users & Audiences",
+        description: `Users of this application are business people who need a complete sales data management system. Which will make it easier for users to track sales information, product management, stock management, payment management, employee shift settings, etc. With this application, it is hoped that all business recording and monitoring can be seen in an integrated application system, namely Autopos.`,
+      },
+      {
+        title: "Roles & Responsibilities",
+        list: [
+          "UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.",
+          "Tester. I am also did end to end test in this project.",
+        ],
+        description2: `The design that has been created is submitted to the development team via Asana. And every Friday there will be a meeting to discuss the week's progress and results.`,
+      },
+      {
+        title: "Scope and Constraints",
+        description: "Scope :",
+        list: [
+          `Core Features of the Application: The Autopos application has several core features that include sales management, acceptance of online orders, shift changes, order history, customer list management, and ongoing transaction management. These are the primary features to be implemented in the application.',
+          'Integration with the Autopos Ecosystem: This application must be fully integrated with other applications within the Autopos ecosystem, including the Content Management System (CMS) and QR Tablet Order. This will enable smooth data exchange between all components of this ecosystem.`,
+          "UI/UX Design: One of my primary responsibilities as a UI/UX designer is to ensure that the user interface (UI) and user experience (UX) design of the application align with user needs. This includes designing user-friendly layouts, navigation, and interactions.",
+          "Testing and Quality Assurance: In addition to design, you also have a role as a tester to ensure that the application functions properly and is free from bugs or issues. End-to-end testing will be conducted to check all app features.",
+        ],
+        description2: "Constraints:",
+        list2: [
+          "Time: The development of Autopos Apps must adhere to the set deadline, which can limit the amount of time available for designing, developing, and testing the application.",
+          "Device Compatibility: The application must perform well on various mobile devices, including smartphones and tablets. This could be a constraint if there are differences in device specifications used by users.",
+          `Data Quality: The accuracy and quality of the data used in the application are critical constraints. Inaccurate or incomplete data can disrupt the application's functionality.`,
+          "Security: Security of transactions and customer data must be tightly maintained. This includes protection against cyber threats and potential data breaches.",
+        ],
+      },
+      {
+        title: "Process",
+        process: "Product Knowledge",
+        description: `In the initial stage of developing the Autopos Apps project, the first step I took was to gain a strong understanding of the product. This involved interviews with the client, Autopos Apps, to grasp the project's goals, vision, and mission. I also studied the previous applications within the Autopos ecosystem to understand how they interacted with each other. Additionally, I researched the sales management industry to comprehend relevant user trends and needs.`,
+
+        process2: "Sitemap",
+        description2: `Once the product understanding was established, the next step was to create a sitemap. A sitemap is a visual representation of the application's structure, encompassing various pages and how they are interconnected. This aids us in organizing information and navigation within the application effectively. The sitemap also enables me and the development team to have a clear overview of how the application will be structured.`,
+
+        process3: "Apps for Inspiration",
+        description3: `In an effort to gather further ideas and inspiration for the design of Autopos Apps, I also observed and analyzed various related websites that might have design elements or features relevant to the project. This step helps in identifying the latest design trends and keeping the application relevant in the competitive market.`,
+        image3: `${autoposapps5}`,
+        caption3: "Inspiration from ESB, iSeller and Qbiz Apps",
+
+        process4: "Design System",
+        description4: `Once wireframes have been approved, we initiate the development of the design system. The design system is a guideline that encompasses design elements like colors, fonts, icons, and UI components that will be consistently used throughout the application. It creates visual consistency and provides a strong brand identity for Autopos Apps. Moreover, the design system ensures that the user interface will look and function well on various devices.`,
+        image4: `${autoposapps4}`,
+        caption4: "Design System & Assets",
+
+        process5: "Mockup",
+        description5: `After the design system has been established, I begin creating mockups, which are the final visual designs of the application. Mockups are comprehensive representations of the user interface, including design elements, illustrations, and images. This is the stage where I apply all the design system elements into the final design of the application. Mockups also encompass aspects such as animations, interactions, and responsiveness that bring the application to life.`,
+        image5: `${autoposapps6}`,
+        caption5: "Some parts of the mockup",
+
+        process6: "Test",
+        description6: `In the testing process of Autopos Apps following its launch on the Playstore, I conducted tests that encompassed various different devices. This included testing on Sunmi and Newland terminals, commonly used in retail businesses, as well as testing on tablet displays. The goal was to ensure that the application functions effectively across diverse devices, including different hardware and screen sizes. During testing, I examined the application's performance, functionality, user interface responsiveness, as well as potential issues or inconsistencies. The result is a confidence that Autopos Apps can be accessed and used smoothly on various devices, supporting our vision to provide sophisticated and user-friendly sales management tools to business owners.`,
+        image6: `${autoposapps7}`,
+        caption6: "Testing on Sunmi POS Terminal",
+      },
+      {
+        title: "Result",
+        description:
+          "The mobile Autopos application has been launched and is available for download through the Playstore platform. The launch process involved hard work from the entire team, from planning to development, and ultimately monitoring the application in a production environment. Users can now easily access the application through their devices. We are proud to announce that Autopos Apps has received a 4.7-star rating on Playstore. This is a positive indication of the initial user response to the application. We greatly appreciate the support and feedback from users who have given high ratings and positive reviews, motivating us to continually improve and update the application.",
+        image: `${autoposapps3}`,
+        caption: "Playstore Autopost",
       },
     ],
   },
@@ -1171,4 +1267,5 @@ export {
   projects,
   workExperiences,
   logoForSale,
+  projectProgrammer,
 };

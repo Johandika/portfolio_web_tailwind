@@ -1,7 +1,8 @@
 // import { slashtheory } from '../assets/images'
 import Button from "./Button";
+import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({
+const ProjectCardProgrammer = ({
   tipe,
   client,
   summary,
@@ -13,6 +14,7 @@ const ProjectCard = ({
   shadowBlue,
   shadowGreen,
   onClick,
+  onClickRepo,
 }) => {
   return (
     <div
@@ -30,17 +32,31 @@ const ProjectCard = ({
           {client}
         </h1>
         <p className="font-Poppins mt-5 leading-loose mb-5 ">{summary}</p>
-        <Button
-          text={"VIEW DETAIL"}
-          className={"self-start font-SpaceMono tracking-widest text-lg"}
-          onClick={onClick}
-          outline
-          {...{
-            ...(colorButton && { color: colorButton }),
-            ...(hoverBlue && { hoverBlue: true }),
-            ...(hoverGreen && { hoverGreen: true }),
-          }}
-        />
+        <div className="flex flex-row gap-4 items-center">
+          <Button
+            text={"VIEW DETAIL"}
+            className={"self-start font-SpaceMono tracking-widest text-lg"}
+            onClick={onClick}
+            outline
+            {...{
+              ...(colorButton && { color: colorButton }),
+              ...(hoverBlue && { hoverBlue: true }),
+              ...(hoverGreen && { hoverGreen: true }),
+            }}
+          />
+          <Button
+            text={"REPO"}
+            className={"self-start font-SpaceMono tracking-widest text-lg"}
+            onClick={onClickRepo}
+            icon={<FaGithub size={24} />}
+            outline
+            {...{
+              ...(colorButton && { color: colorButton }),
+              ...(hoverBlue && { hoverBlue: true }),
+              ...(hoverGreen && { hoverGreen: true }),
+            }}
+          />
+        </div>
       </div>
       <div className="w-full order-1 sm:order-2 sm:w-1/2 relative">
         <div
@@ -68,4 +84,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default ProjectCardProgrammer;

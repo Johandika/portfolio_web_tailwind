@@ -2,10 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./pages/sections/Navbar";
 import ProjectId from "./pages/ProjectId";
+import ProjectProgrammerId from "./pages/ProjectProgrammerId";
 import AnimatedCursor from "react-animated-cursor";
 import ScrollToTop from "./components/animation/ScrollToTop";
 import UnderConstruction from "./pages/UnderConstruction";
 import Logo from "./pages/Logo";
+import MultipleLink from "./pages/MultipleLink";
 
 function App() {
   const isLaptop = window.innerWidth >= 768;
@@ -48,6 +50,10 @@ function App() {
           element={<ProjectId />}
         />
         <Route
+          path="/project-programmer/:id"
+          element={<ProjectProgrammerId />}
+        />
+        <Route
           path="/test"
           element={<UnderConstruction />}
         />
@@ -66,6 +72,10 @@ function App() {
         <Route
           path="/products/uidesign"
           element={<UnderConstruction />}
+        />
+        <Route
+          path="/links/:id"
+          element={<MultipleLink />}
         />
       </Routes>
     </BrowserRouter>
