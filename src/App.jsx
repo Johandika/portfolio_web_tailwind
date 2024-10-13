@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import ScrollToTop from "./components/animation/ScrollToTop";
 import UnderConstruction from "./pages/UnderConstruction";
 import Logo from "./pages/Logo";
+import MultipleLink from "./pages/MultipleLink";
 
 function App() {
   const isLaptop = window.innerWidth >= 768;
@@ -71,6 +72,10 @@ function App() {
         <Route
           path="/products/uidesign"
           element={<UnderConstruction />}
+        />
+        <Route
+          path="/links/:id"
+          element={<MultipleLink />}
         />
       </Routes>
     </BrowserRouter>

@@ -31,6 +31,7 @@ import {
   slashtheoryimage3,
   slashtheoryimage4,
   slashtheoryimage5,
+  raudhatuljannah,
   cheetahimage1,
   cheetahimage2,
   cheetahimage3,
@@ -219,9 +220,9 @@ const skillDesign = [
 const projects = [
   {
     id: 1,
-    tipe: "MOBILE APPS",
+    tipe: "MOBILE APP",
     link: "https://www.autopos.id/",
-    client: "Autopos Apps",
+    client: "Autopos App",
     summary:
       "Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.",
     image: `${autoposapps}`,
@@ -612,15 +613,18 @@ const projects = [
   },
 ];
 
-const projectProgrammer=[
+const projectProgrammer = [
   {
     id: 1,
-    tipe: "MOBILE APPS",
-    link: "https://www.autopos.id/",
-    client: "Autopos Apps",
+    tipe: "WEBSITE (UI/UX & Fullstack)",
+    linkDemo: "https://youtu.be/ifuOMV90iok",
+    link: "https://github.dev/Johandika/FrontSide-MasjidRaudhatulJannah",
+    link2: "hhttps://github.com/Johandika/Server-MasjidRaudhatulJannah",
+    link3: "https://github.com/Johandika/CMS-MasjidRaudhatulJannah",
+    client: "Raudhatul Jannah Islamic Center",
     summary:
       "Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.",
-    image: `${autoposapps}`,
+    image: `${raudhatuljannah}`,
     year: "2023",
     preview: {
       title: "Autopos apps, integrated sales management mobile application.",
@@ -702,7 +706,7 @@ const projectProgrammer=[
       },
     ],
   },
-]
+];
 
 const workExperiences = [
   {

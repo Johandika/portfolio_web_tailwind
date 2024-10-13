@@ -56,7 +56,7 @@ const ProjectCard = ({
 
             z-0 -right-8 -bottom-10 overflow-hidden scale-100 hover:scale-105 transition`}
         >
-          <div className="w-full h-full sm:bg-Black sm:group-hover:bg-Black/0 transition z-10 absolute"></div>
+          <div className="w-full h-full sm:bg-Black/80 sm:group-hover:bg-Black/0 transition z-10 absolute"></div>
           <img
             src={image}
             alt={client}
