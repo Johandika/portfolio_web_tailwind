@@ -623,7 +623,7 @@ const projectProgrammer = [
     id: 1,
     tipe: "WEBSITE (UI/UX & Fullstack)",
     linkDemo: "https://youtu.be/ifuOMV90iok",
-    link: "https://github.dev/Johandika/FrontSide-MasjidRaudhatulJannah",
+    link: "https://github.com/Johandika/FrontSide-MasjidRaudhatulJannah",
     link2: "hhttps://github.com/Johandika/Server-MasjidRaudhatulJannah",
     link3: "https://github.com/Johandika/CMS-MasjidRaudhatulJannah",
     client: "Raudhatul Jannah Islamic Center",
