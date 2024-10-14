@@ -85,42 +85,44 @@ const ProjectProgrammerId = () => {
           />
           {/* Content */}
           <div className="gap-8 flex flex-col">
-            {projectProgrammer?.content?.map((item) => (
-              <Topic
-                //  key={item?.title} topic={topics[0]}
-                key={item?.title}
-                title={item?.title}
-                description={item?.description}
-                description2={item?.description2 ? item.description2 : null}
-                description3={item?.description3 ? item.description3 : null}
-                description4={item?.description4 ? item.description4 : null}
-                description5={item?.description5 ? item.description5 : null}
-                description6={item?.description6 ? item.description6 : null}
-                list={item.list ? item.list : null}
-                list2={item.list2 ? item.list2 : null}
-                list3={item.list3 ? item.list3 : null}
-                list4={item.list4 ? item.list4 : null}
-                list5={item.list5 ? item.list5 : null}
-                list6={item.list6 ? item.list6 : null}
-                process={item.process ? item.process : null}
-                process2={item.process2 ? item.process2 : null}
-                process3={item.process3 ? item.process3 : null}
-                process4={item.process4 ? item.process4 : null}
-                process5={item.process5 ? item.process5 : null}
-                process6={item.process6 ? item.process6 : null}
-                caption={item.caption ? item.caption : null}
-                caption2={item.caption2 ? item.caption2 : null}
-                caption3={item.caption3 ? item.caption3 : null}
-                caption4={item.caption4 ? item.caption4 : null}
-                caption5={item.caption5 ? item.caption5 : null}
-                caption6={item.caption6 ? item.caption6 : null}
-                image={item.image ? item.image : null}
-                image2={item.image2 ? item.image2 : null}
-                image3={item.image3 ? item.image3 : null}
-                image4={item.image4 ? item.image4 : null}
-                image5={item.image5 ? item.image5 : null}
-                image6={item.image6 ? item.image6 : null}
-              />
+            {project?.content?.map((item) => (
+              <>
+                <Topic
+                  //  key={item?.title} topic={topics[0]}
+                  key={item?.title}
+                  title={item?.title}
+                  description={item?.description}
+                  description2={item?.description2 ? item.description2 : null}
+                  description3={item?.description3 ? item.description3 : null}
+                  description4={item?.description4 ? item.description4 : null}
+                  description5={item?.description5 ? item.description5 : null}
+                  description6={item?.description6 ? item.description6 : null}
+                  list={item.list ? item.list : null}
+                  list2={item.list2 ? item.list2 : null}
+                  list3={item.list3 ? item.list3 : null}
+                  list4={item.list4 ? item.list4 : null}
+                  list5={item.list5 ? item.list5 : null}
+                  list6={item.list6 ? item.list6 : null}
+                  process={item.process ? item.process : null}
+                  process2={item.process2 ? item.process2 : null}
+                  process3={item.process3 ? item.process3 : null}
+                  process4={item.process4 ? item.process4 : null}
+                  process5={item.process5 ? item.process5 : null}
+                  process6={item.process6 ? item.process6 : null}
+                  caption={item.caption ? item.caption : null}
+                  caption2={item.caption2 ? item.caption2 : null}
+                  caption3={item.caption3 ? item.caption3 : null}
+                  caption4={item.caption4 ? item.caption4 : null}
+                  caption5={item.caption5 ? item.caption5 : null}
+                  caption6={item.caption6 ? item.caption6 : null}
+                  image={item.image ? item.image : null}
+                  image2={item.image2 ? item.image2 : null}
+                  image3={item.image3 ? item.image3 : null}
+                  image4={item.image4 ? item.image4 : null}
+                  image5={item.image5 ? item.image5 : null}
+                  image6={item.image6 ? item.image6 : null}
+                />
+              </>
             ))}
             {project.link && (
               <Button

@@ -122,6 +122,8 @@ import {
   xmart,
   ylogo,
   zthunder,
+  raudhatuljannah2,
+  raudhatuljannah3,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -623,61 +625,61 @@ const projectProgrammer = [
     link3: "https://github.com/Johandika/CMS-MasjidRaudhatulJannah",
     client: "Raudhatul Jannah Islamic Center",
     summary:
-      "Building the UI/UX of the POS application, one of 3 Autopos integrated applications. To make it easier for cashiers to manage products and payments.",
+      "Designing and developing the event management and information website for Raudahtul Jannah Islamic Center, the largest Islamic education center in Pekanbaru.",
     image: `${raudhatuljannah}`,
     year: "2023",
     preview: {
-      title: "Autopos apps, integrated sales management mobile application.",
+      title: "RJIC website, managing mosque information and events.",
       description:
-        "Autopos Apps is one of 3 Autopos applications that are integrated with each other, the Autopos mobile application helps business owners to carry out sales management. This application will later be used on the waiter/cashier side to help carry out transactions from the customer to the waiter/cashier. Apart from that, this application can accept online orders, shift changes, order history, customer list management, ongoing transaction management.",
-      image: `${autoposapps2}`,
-      caption: "Autopos apps preview",
-      caption2: "Autopos application is available on Playstore",
+        "Raudhatul Jannah Islamic Center (RJIC) Mosque is one of the mosques in Pekanbaru that offers various Islamic teachings to its congregation, including Tahsin activities, Arabic language classes, regular Islamic studies, Tabligh Akbar, RJIC ambulance services, Iftar gatherings, and many more",
+      image: `${raudhatuljannah2}`,
+      caption: "RJIC website preview",
+      caption2: "Photo of Raudhatul Jannah Islamic Center (RJIC) mosque",
     },
     content: [
       {
         title: "Problem",
         description:
-          "In the process of creating 3 integrated Autopos applications (CMS, mobile apps, QR Tablet Order) an application is needed as a bridge that connects the data side on the CMS side with the client, therefore an Autopos mobile application was created with the features needed to interact with the client such as ordering features, transactions, transaction history, Void, changing shifts, online ordering, etc. which directly connect clients (in this case, namely business actors such as cashiers/waiters/business owners) with customers.",
+          "Raudhatul Jannah Islamic Center (RJIC) is a mosque located in the heart of Pekanbaru, known for its numerous regular activities and events, and it is one of the most recognized centers for Islamic learning in the city. However, despite the abundance of activities, the information management was lacking; all information at the time was shared solely through WhatsApp, which proved to be less effective. I came forward with a solution to streamline event information into a single source, by developing a website.",
       },
       {
         title: "Users & Audiences",
-        description: `Users of this application are business people who need a complete sales data management system. Which will make it easier for users to track sales information, product management, stock management, payment management, employee shift settings, etc. With this application, it is hoped that all business recording and monitoring can be seen in an integrated application system, namely Autopos.`,
+        description: `The users of this application are mosque administrators for managing information data, and mosque congregants who want to stay updated on the latest mosque activities, Tahsin and Arabic class schedules, donation links, Iftar schedules, regular study holiday information, and more.`,
       },
       {
         title: "Roles & Responsibilities",
         list: [
-          "UI/UX designer, I was responsible as a UI/UX designer who carried out the development of the mobile application design from start to finish. Carrying out design communication with developers.",
-          "Tester. I am also did end to end test in this project.",
+          "UI/UX designer, I am responsible as the UI/UX designer for the website application.",
+          "Frontend developer, I also develop the application UI (CMS and client-side app) using React JS and Tailwind CSS technology.",
+          "Backend developer, I also develop the application from the backend side using Express JS and PostgreSQL technology.",
         ],
-        description2: `The design that has been created is submitted to the development team via Asana. And every Friday there will be a meeting to discuss the week's progress and results.`,
+        description2: `I am involved in the entire process of designing and developing the application.`,
       },
       {
         title: "Scope and Constraints",
         description: "Scope :",
         list: [
-          `Core Features of the Application: The Autopos application has several core features that include sales management, acceptance of online orders, shift changes, order history, customer list management, and ongoing transaction management. These are the primary features to be implemented in the application.',
-          'Integration with the Autopos Ecosystem: This application must be fully integrated with other applications within the Autopos ecosystem, including the Content Management System (CMS) and QR Tablet Order. This will enable smooth data exchange between all components of this ecosystem.`,
           "UI/UX Design: One of my primary responsibilities as a UI/UX designer is to ensure that the user interface (UI) and user experience (UX) design of the application align with user needs. This includes designing user-friendly layouts, navigation, and interactions.",
-          "Testing and Quality Assurance: In addition to design, you also have a role as a tester to ensure that the application functions properly and is free from bugs or issues. End-to-end testing will be conducted to check all app features.",
+          "Frontend developer: I developed two different applications, namely the CMS for managing RJIC admin data and the main application for displaying information to the congregation.",
+          "Backend developer: I contributed to building the system logic, creating APIs, and integrating them with the PostgreSQL database.",
+          "Testing and Quality Assurance: In addition to design, I also have a role as a tester to ensure that the application functions properly and is free from bugs or issues. End-to-end testing will be conducted to check all app features.",
         ],
         description2: "Constraints:",
         list2: [
-          "Time: The development of Autopos Apps must adhere to the set deadline, which can limit the amount of time available for designing, developing, and testing the application.",
-          "Device Compatibility: The application must perform well on various mobile devices, including smartphones and tablets. This could be a constraint if there are differences in device specifications used by users.",
-          `Data Quality: The accuracy and quality of the data used in the application are critical constraints. Inaccurate or incomplete data can disrupt the application's functionality.`,
-          "Security: Security of transactions and customer data must be tightly maintained. This includes protection against cyber threats and potential data breaches.",
+          "Time: Developing a system and interface that is quite complex took several months to complete the project.",
         ],
       },
       {
         title: "Process",
-        process: "Product Knowledge",
-        description: `In the initial stage of developing the Autopos Apps project, the first step I took was to gain a strong understanding of the product. This involved interviews with the client, Autopos Apps, to grasp the project's goals, vision, and mission. I also studied the previous applications within the Autopos ecosystem to understand how they interacted with each other. Additionally, I researched the sales management industry to comprehend relevant user trends and needs.`,
+        process: "Design UI/UX (Mockup)",
+        description: `The creation of UI/UX is the initial phase that needs to be undertaken, starting with understanding the flow, creating simple wireframes, and then developing high-fidelity mockups. This involves aligning the design with the entire workflow and application requirements.`,
+        image: `${raudhatuljannah3}`,
+        caption: "Initial UI/UX design",
 
-        process2: "Sitemap",
+        process2: "Frontend Development",
         description2: `Once the product understanding was established, the next step was to create a sitemap. A sitemap is a visual representation of the application's structure, encompassing various pages and how they are interconnected. This aids us in organizing information and navigation within the application effectively. The sitemap also enables me and the development team to have a clear overview of how the application will be structured.`,
 
-        process3: "Apps for Inspiration",
+        process3: "Bac",
         description3: `In an effort to gather further ideas and inspiration for the design of Autopos Apps, I also observed and analyzed various related websites that might have design elements or features relevant to the project. This step helps in identifying the latest design trends and keeping the application relevant in the competitive market.`,
         image3: `${autoposapps5}`,
         caption3: "Inspiration from ESB, iSeller and Qbiz Apps",

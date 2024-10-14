@@ -14,7 +14,7 @@ const ProjectId = () => {
   const project = projects.find((project) => project.id === parseInt(id, 10));
 
   const handleBackClick = () => {
-    navigate(`/`);
+    navigate(-1);
   };
   console.log(project.link);
 
