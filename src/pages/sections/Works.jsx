@@ -1,6 +1,6 @@
 import Container from "../../components/Container";
 import { workExperiences } from "../../constants";
-import { useState, useRef } from 'react';
+import { useState, useRef } from "react";
 
 const Works = () => {
   const scrollContainerRef = useRef(null); // Menambahkan useRef untuk kontainer scroll
@@ -44,7 +44,10 @@ const Works = () => {
       >
         {/* Card */}
         {workExperiences?.map((item) => (
-          <div key={item.id} className="flex min-w-[400px] sm:min-w-[1000px] h-auto flex-col sm:flex-row bg-gradient-to-tl from-gray-800 via-Gray to-Gray p-8 rounded-lg gap-5 sm:gap-10 group ">
+          <div
+            key={item.id}
+            className="flex min-w-[400px] sm:min-w-[1000px] h-auto flex-col sm:flex-row bg-gradient-to-tl from-gray-800 via-Gray to-Gray p-8 rounded-lg gap-5 sm:gap-10 group "
+          >
             {/* Kiri */}
             <div className="flex flex-col gap-5 w-fit ">
               <div className="mb-2">
@@ -75,11 +78,12 @@ const Works = () => {
                 <ol className=" flex flex-col gap-2">
                   {/* Looping Responsibilities */}
                   {item.responsibilities.map((item, index) => (
-                    <li key={index + 1} className="flex">
+                    <li
+                      key={index + 1}
+                      className="flex"
+                    >
                       <p className="mr-2">{index + 1}.</p>
-                      <div>
-                        {item}
-                      </div>
+                      <div>{item}</div>
                     </li>
                   ))}
                 </ol>
@@ -90,7 +94,11 @@ const Works = () => {
                   {/* Looping Tools */}
                   {item.tools.map((tool, index) => (
                     <div key={index + 1}>
-                      <img src={tool} alt="" className="w-7" />
+                      <img
+                        src={tool}
+                        alt=""
+                        className="w-7"
+                      />
                     </div>
                   ))}
                 </div>

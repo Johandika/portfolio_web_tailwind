@@ -14,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`px-4 sm:px-8 py-4 sm:py-4 flex flex-row items-center gap-3
+      className={`px-4 sm:px-8 py-4 sm:py-4 flex flex-row items-center gap-3 
       ${
         outline
           ? `rounded-lg ring-1  

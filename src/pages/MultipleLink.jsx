@@ -16,7 +16,7 @@ const MultipleLink = () => {
 
   return (
     <div className="  text-white h-screen w-full flex justify-center items-center">
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-4 mx-4">
         <div
           onClick={() => handleBackClick()}
           className="py-2 px-3 border-[1px] self-start rounded-lg border-gray-600 text-gray-400 hover:bg-gray-800  transition flex flex-row gap-2 items-center font-light"
@@ -28,7 +28,7 @@ const MultipleLink = () => {
           Kembali
         </div>
         {project.linkDemo && (
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col  sm:flex-row gap-0 sm:gap-2">
             <p>Demo :</p>
             <a
               href={project.linkDemo}
@@ -41,7 +41,7 @@ const MultipleLink = () => {
           </div>
         )}
         {project.link && (
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col  sm:flex-row gap-0 sm:gap-2">
             <p>Link Repo 1 :</p>
             <a
               href={project.link}
@@ -54,7 +54,7 @@ const MultipleLink = () => {
           </div>
         )}
         {project.link2 && (
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col  sm:flex-row gap-0 sm:gap-2">
             <p>Link Repo 2 :</p>
             <a
               href={project.link2}
@@ -67,7 +67,7 @@ const MultipleLink = () => {
           </div>
         )}
         {project.link3 && (
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col  sm:flex-row gap-0 sm:gap-2">
             <p>Link Repo 3 :</p>
             <a
               href={project.link3}

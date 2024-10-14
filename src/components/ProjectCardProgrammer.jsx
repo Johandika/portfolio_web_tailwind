@@ -46,7 +46,7 @@ const ProjectCardProgrammer = ({
           />
           <Button
             text={"REPO"}
-            className={"self-start font-SpaceMono tracking-widest text-lg"}
+            className={"font-SpaceMono tracking-widest text-lg "}
             onClick={onClickRepo}
             icon={<FaGithub size={24} />}
             outline
