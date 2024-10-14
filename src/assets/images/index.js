@@ -71,6 +71,9 @@ export { default as pmiweb5 } from "./pmiweb5.jpg";
 export { default as raudhatuljannah } from "./raudhatuljannah.jpg";
 export { default as raudhatuljannah2 } from "./raudhatuljannah2.jpg";
 export { default as raudhatuljannah3 } from "./raudhatuljannah3.jpg";
+export { default as raudhatuljannah4 } from "./raudhatuljannah4.jpg";
+export { default as raudhatuljannah5 } from "./raudhatuljannah5.jpg";
+export { default as raudhatuljannah6 } from "./raudhatuljannah6.jpg";
 // Logo
 export { default as allencio } from "./logo/allencio.jpg";
 export { default as aveshome } from "./logo/aveshome.jpg";

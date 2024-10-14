@@ -124,6 +124,9 @@ import {
   zthunder,
   raudhatuljannah2,
   raudhatuljannah3,
+  raudhatuljannah4,
+  raudhatuljannah5,
+  raudhatuljannah6,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -677,34 +680,26 @@ const projectProgrammer = [
         caption: "Initial UI/UX design",
 
         process2: "Frontend Development",
-        description2: `Once the product understanding was established, the next step was to create a sitemap. A sitemap is a visual representation of the application's structure, encompassing various pages and how they are interconnected. This aids us in organizing information and navigation within the application effectively. The sitemap also enables me and the development team to have a clear overview of how the application will be structured.`,
+        description2: `Implemented design slicing into code using React.js and Tailwind CSS technologies. During this phase, I developed two distinct interfaces: the Content Management System (CMS) application interface and the user-facing application interface.`,
+        image2: `${raudhatuljannah4}`,
+        caption2: "Slicing login page CMS application",
 
-        process3: "Bac",
-        description3: `In an effort to gather further ideas and inspiration for the design of Autopos Apps, I also observed and analyzed various related websites that might have design elements or features relevant to the project. This step helps in identifying the latest design trends and keeping the application relevant in the competitive market.`,
-        image3: `${autoposapps5}`,
-        caption3: "Inspiration from ESB, iSeller and Qbiz Apps",
+        process3: "Database Structure & ERD",
+        description3: `Designed the database structure using Entity Relationship Diagrams (ERD) to facilitate server-side development and database integration. The ERD served as a guide for establishing relationships between entities.`,
+        image3: `${raudhatuljannah5}`,
+        caption3: "Entity Relationship Diagram (ERD) RJIC",
 
-        process4: "Design System",
-        description4: `Once wireframes have been approved, we initiate the development of the design system. The design system is a guideline that encompasses design elements like colors, fonts, icons, and UI components that will be consistently used throughout the application. It creates visual consistency and provides a strong brand identity for Autopos Apps. Moreover, the design system ensures that the user interface will look and function well on various devices.`,
-        image4: `${autoposapps4}`,
-        caption4: "Design System & Assets",
-
-        process5: "Mockup",
-        description5: `After the design system has been established, I begin creating mockups, which are the final visual designs of the application. Mockups are comprehensive representations of the user interface, including design elements, illustrations, and images. This is the stage where I apply all the design system elements into the final design of the application. Mockups also encompass aspects such as animations, interactions, and responsiveness that bring the application to life.`,
-        image5: `${autoposapps6}`,
-        caption5: "Some parts of the mockup",
-
-        process6: "Test",
-        description6: `In the testing process of Autopos Apps following its launch on the Playstore, I conducted tests that encompassed various different devices. This included testing on Sunmi and Newland terminals, commonly used in retail businesses, as well as testing on tablet displays. The goal was to ensure that the application functions effectively across diverse devices, including different hardware and screen sizes. During testing, I examined the application's performance, functionality, user interface responsiveness, as well as potential issues or inconsistencies. The result is a confidence that Autopos Apps can be accessed and used smoothly on various devices, supporting our vision to provide sophisticated and user-friendly sales management tools to business owners.`,
-        image6: `${autoposapps7}`,
-        caption6: "Testing on Sunmi POS Terminal",
+        process4: "Backend Development",
+        description4: `Developed the server-side components using PostgreSQL and Express.js, leveraging the Sequelize ORM. This involved creating APIs, implementing programming logic, and integrating with the database.`,
+        image4: `${raudhatuljannah6}`,
+        caption4: "RJIC list API",
       },
       {
         title: "Result",
         description:
-          "The mobile Autopos application has been launched and is available for download through the Playstore platform. The launch process involved hard work from the entire team, from planning to development, and ultimately monitoring the application in a production environment. Users can now easily access the application through their devices. We are proud to announce that Autopos Apps has received a 4.7-star rating on Playstore. This is a positive indication of the initial user response to the application. We greatly appreciate the support and feedback from users who have given high ratings and positive reviews, motivating us to continually improve and update the application.",
-        image: `${autoposapps3}`,
-        caption: "Playstore Autopost",
+          "Successfully developed three integrated applications: a CMS application, a front-end application, and a back-end application. This integrated system can store data for all activities at RJIC, including Tahsin schedules, Islamic study sessions, Arabic language classes, donations, and more. The aim of this application suite is to simplify data management for RJIC administrators by providing a single source of truth, while also making it easier for community members to access information about RJIC activities.",
+        // image: `${autoposapps3}`,
+        // caption: "Playstore Autopost",
       },
     ],
   },

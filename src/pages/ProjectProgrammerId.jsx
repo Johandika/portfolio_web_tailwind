@@ -21,7 +21,7 @@ const ProjectProgrammerId = () => {
   console.log(project.link);
 
   const handleClick = () => {
-    window.open(project.link, "_blank");
+    window.open(project.linkDemo, "_blank");
   };
 
   if (!project) {
@@ -126,7 +126,7 @@ const ProjectProgrammerId = () => {
             ))}
             {project.link && (
               <Button
-                text={project.link}
+                text={"View Live Demo"}
                 className={"text-white tracking-widest self-center"}
                 onClick={handleClick}
               />

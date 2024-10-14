@@ -41,7 +41,7 @@ const Projects = () => {
     <Container className="py-20 flex flex-col justify-center items-center gap-16">
       <div className="flex flex-col justify-center items-center gap-6">
         <h2 className="font-SpaceMono text-4xl underline">Selected Projects</h2>
-        <div className="flex flex-row gap-4 self-start">
+        <div className="flex flex-row gap-4 self-start sm:self-center">
           <div
             className={chipStyle("uiux")}
             onClick={() => setActive("uiux")}
