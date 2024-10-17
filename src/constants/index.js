@@ -127,6 +127,9 @@ import {
   raudhatuljannah4,
   raudhatuljannah5,
   raudhatuljannah6,
+  hoobank,
+  hoobank2,
+  hoobank3,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -621,7 +624,87 @@ const projects = [
 const projectProgrammer = [
   {
     id: 1,
-    tipe: "WEBSITE (UI/UX & Fullstack)",
+    tipe: "WEBSITE (Front-End)",
+    linkDemo: "https://johandika-hoobank-reactjs.vercel.app/",
+    link: "https://github.com/Johandika/Hoo-Bank-ReactJS",
+    client: "Hoo Bank",
+    summary:
+      "Developed a modern, responsive landing page for HooBank, showcasing next-generation payment methods and financial services using React JS and Tailwind CSS.",
+    image: `${hoobank}`,
+    year: "2023",
+    preview: {
+      title: "HooBank: The Next Generation Payment Method",
+      description:
+        "HooBank offers a cutting-edge platform for financial services, focusing on credit card solutions, secure transactions, and business growth. The landing page highlights key features and benefits for users looking to improve their financial management",
+      image: `${hoobank}`,
+      caption: "HooBank landing page preview",
+      caption2: "Showcasing modern financial solutions",
+    },
+    content: [
+      {
+        title: "Problem",
+        description:
+          "In a crowded fintech market, HooBank needed a standout web presence to communicate its unique value proposition of next-generation payment methods and financial services to potential customers.",
+      },
+      {
+        title: "Users & Audiences",
+        description: `In a crowded fintech market, HooBank needed a standout web presence to communicate its unique value proposition of next-generation payment methods and financial services to potential customers.`,
+      },
+      {
+        title: "Roles & Responsibilities",
+        list: [
+          "Frontend developer, responsible for slicing the design into a functional React JS application",
+          "Implemented responsive design using Tailwind CSS",
+          "Ensured cross-browser compatibility and optimal performance",
+        ],
+        description2: `As the sole developer on this project, I was responsible for translating the provided design into a fully functional website.`,
+      },
+      {
+        title: "Scope and Constraints",
+        description: "Scope :",
+        list: [
+          "Develop a single-page application using React JS",
+          "Implement responsive design for all screen sizes",
+          "Integrate interactive elements and animations for enhanced user experience",
+          "Ensure fast loading times and optimized performance",
+        ],
+        description2: "Constraints:",
+        list2: [
+          "Adhering strictly to the provided design while ensuring responsiveness",
+          "Optimizing for performance given the rich visual content"
+        ],
+      },
+      {
+        title: "Process",
+        process: "Design Analysis",
+        description: "Studied the provided design to understand the layout, color scheme, and interactive elements required.",
+        image: `${hoobank2}`, // Assuming you have additional images
+        caption: "HooBank design analysis",
+
+        process2: "Development",
+        description2: "Used React JS with Vite for fast development and Tailwind CSS for efficient styling. Implemented component-based architecture for maintainability.",
+        // image2: `${hoobank}`,
+        // caption2: "React component structure",
+
+        process3: "Responsive Implementation",
+        description3: "Utilized Tailwind CSS's responsive classes to ensure the design looks great on all devices.",
+        image3: `${hoobank3}`,
+        caption3: "Responsive design implementation",
+
+        process4: "Performance Optimization",
+        description4: "Optimized images, and minimized bundle size for faster loading times.",
+      },
+      {
+        title: "Result",
+        description: "Successfully delivered a high-fidelity, responsive landing page that accurately represents HooBank's brand and services. The website effectively communicates key information about the company's offerings, including credit card services, secure transactions, and business growth tools. The modern design and smooth interactions provide an engaging user experience that aligns with HooBank's image as a next-generation financial services provider.",
+        // image: `${autoposapps3}`,
+        // caption: "Playstore Autopost",
+      },
+    ],
+  },
+  {
+    id: 2,
+    tipe: "WEBSITE (Fullstack)",
     linkDemo: "https://youtu.be/ifuOMV90iok",
     link: "https://github.com/Johandika/FrontSide-MasjidRaudhatulJannah",
     link2: "hhttps://github.com/Johandika/Server-MasjidRaudhatulJannah",
@@ -703,6 +786,7 @@ const projectProgrammer = [
       },
     ],
   },
+  
 ];
 
 const workExperiences = [
