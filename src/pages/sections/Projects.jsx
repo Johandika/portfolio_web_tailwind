@@ -1,16 +1,26 @@
-import { useState } from "react";
+import {  useEffect, useState } from "react";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 import ProjectCard from "../../components/ProjectCard";
 import ProjectCardProgrammer from "../../components/ProjectCardProgrammer";
 import { projects, projectProgrammer } from "../../constants";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { changeToProgrammer, changeToUiUx } from "../../redux/categorySlice";
 
 const Projects = () => {
   const [displayData, setDisplayData] = useState(2);
-  const [active, setActive] = useState("uiux");
+  const role = useSelector((state) => state.role.role)
+  const dispatch = useDispatch()
   const navigate = useNavigate();
-
+  
+  useEffect(() => {
+    console.log(role,'role')
+  
+    
+  })
+  
+  
   const loadMore = () => {
     setDisplayData((prevItemCount) => prevItemCount + 2);
   };
@@ -34,7 +44,7 @@ const Projects = () => {
     const inactiveStyle =
       "text-white/40 border-[1px] border-gray-800 bg-gray-900/40 hover:bg-gray-800 hover:text-white";
 
-    return `${baseStyle} ${active === chipType ? activeStyle : inactiveStyle}`;
+    return `${baseStyle} ${role === chipType ? activeStyle : inactiveStyle}`;
   };
 
   return (
@@ -43,14 +53,14 @@ const Projects = () => {
         <h2 className="font-SpaceMono text-4xl underline">Selected Projects</h2>
         <div className="flex flex-row gap-4 self-start sm:self-center">
           <div
-            className={chipStyle("uiux")}
-            onClick={() => setActive("uiux")}
+            className={chipStyle("ui/ux")}
+            onClick={() => dispatch(changeToUiUx())}
           >
             UI/UX
           </div>
           <div
             className={chipStyle("programmer")}
-            onClick={() => setActive("programmer")}
+            onClick={() => dispatch(changeToProgrammer())}
           >
             Programmer
           </div>
@@ -58,7 +68,7 @@ const Projects = () => {
       </div>
 
       {/* Card Projects */}
-      {active === "uiux"
+      {role === "ui/ux"
         ? projects.slice(0, displayData).map((project, index) => {
             //kondisi agar setiap index pertama kedua dan ketiga warnanya merah hijau biru seterusnya
             const styles = [
