@@ -78,7 +78,8 @@ export { default as raudhatuljannah6 } from "./raudhatuljannah6.jpg";
 export { default as hoobank } from "./hoobank.jpg";
 export { default as hoobank2 } from "./hoobank2.jpg";
 export { default as hoobank3 } from "./hoobank3.gif";
-
+// Rentalmobil
+export { default as rentalmobil } from "./rentalmobil.jpg";
 // Logo
 export { default as allencio } from "./logo/allencio.jpg";
 export { default as aveshome } from "./logo/aveshome.jpg";

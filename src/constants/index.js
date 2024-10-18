@@ -130,6 +130,7 @@ import {
   hoobank,
   hoobank2,
   hoobank3,
+  rentalmobil,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -624,7 +625,7 @@ const projects = [
 const projectProgrammer = [
   {
     id: 1,
-    tipe: "WEBSITE (Front-End)",
+    tipe: "WEBSITE (Frontend)",
     linkDemo: "https://johandika-hoobank-reactjs.vercel.app/",
     link: "https://github.com/Johandika/Hoo-Bank-ReactJS",
     client: "Hoo Bank",
@@ -784,6 +785,73 @@ const projectProgrammer = [
         // image: `${autoposapps3}`,
         // caption: "Playstore Autopost",
       },
+    ],
+  },
+  {
+    id: 3,
+    tipe: "WEBSITE (Frontend)",
+    linkDemo: "https://johandika-rental-mobil-apps.vercel.app/",
+    link: "https://github.com/Johandika/Rental-Mobil-NextJS-Tailwind",
+    // link2: "hhttps://github.com/Johandika/Server-MasjidRaudhatulJannah",
+    // link3: "https://github.com/Johandika/CMS-MasjidRaudhatulJannah",
+    client: "Rental Mobil (Personal Project)",
+    summary:
+      "Developed a frontend car rental website using TypeScript, Tailwind CSS, and React JS, integrating with Rapid API for car data.",
+    image: `${rentalmobil}`,
+    year: "2023",
+    preview: {
+      title: "Find and rent a car - quickly and easily!",
+      description:
+        "Simplify your car rental experience with our streamlined booking process. Browse our extensive catalog of vehicles and find the perfect car for your needs",
+      
+    },
+    content: [
+      {
+        title: "Project Overview",
+        description:
+          "This personal project showcases a modern frontend car rental website built with TypeScript, React JS, and Tailwind CSS. It features a user-friendly interface for browsing and renting various car models, with data sourced from Rapid API.",
+          image: `${rentalmobil}`,
+          caption: "Car rental website preview",
+      },
+      {
+        title: "Roles & Responsibilities",
+        list: [
+          "UI/UX designer, I am responsible as the UI/UX designer for the website application.",
+          "Frontend developer, I also develop the application UI (CMS and client-side app) using React JS and Tailwind CSS technology.",
+          "Backend developer, I also develop the application from the backend side using Express JS and PostgreSQL technology.",
+        ],
+        description2: `I am involved in the entire process of designing and developing the application.`,
+      },
+      {
+        title: "Key Features",
+        list: [
+          "Responsive design for seamless use across devices",
+          "Dynamic car catalog with filtering options",
+          "Detailed car information pages",
+          "Integration with Rapid API for up-to-date car data",
+          "TypeScript for enhanced code reliability",
+          "Tailwind CSS for efficient and responsive styling",
+         ],
+      },
+      {
+        title: "Technical Stack",
+        list: [
+            "Frontend: React JS with TypeScript",
+            "Styling: Tailwind CSS",
+            "API Integration: Rapid API",
+            "Deployment: Vercel",
+        ],
+    },
+    {
+      title: "Learning Outcomes",
+      description: "This project helped me gain hands-on experience with:",
+      list: [
+          "Building scalable React applications with TypeScript",
+          "Implementing responsive designs using Tailwind CSS",
+          "Integrating and managing external API data in a frontend application",
+          "Deploying frontend applications on Vercel",
+      ],
+  },
     ],
   },
   
