@@ -48,3 +48,9 @@ body::before {
   filter: url(#grainyTexture);
 }
 
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+

@@ -8,6 +8,7 @@ import ScrollToTop from "./components/animation/ScrollToTop";
 import UnderConstruction from "./pages/UnderConstruction";
 import Logo from "./pages/Logo";
 import MultipleLink from "./pages/MultipleLink";
+import Fonts from "./pages/Fonts";
 
 function App() {
   const isLaptop = window.innerWidth >= 768;
@@ -63,7 +64,7 @@ function App() {
         />
         <Route
           path="/products/fonts"
-          element={<UnderConstruction />}
+          element={<Fonts />}
         />
         <Route
           path="/products/code"

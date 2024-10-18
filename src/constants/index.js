@@ -131,6 +131,7 @@ import {
   hoobank2,
   hoobank3,
   rentalmobil,
+  brandingpro,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -1409,6 +1410,16 @@ const logoForSale = [
   },
 ];
 
+const fonts = [
+  {
+    name: "Branding Pro",
+    image: brandingpro,
+    price: 'Free',
+    available: true,
+    link: "https://www.dafont.com/branding-pro.font",
+  }
+]
+
 export {
   skillDesign,
   skills,
@@ -1417,4 +1428,5 @@ export {
   workExperiences,
   logoForSale,
   projectProgrammer,
+  fonts
 };

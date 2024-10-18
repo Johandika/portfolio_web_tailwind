@@ -150,3 +150,5 @@ export { default as wwings } from "./logo/wwings.jpg";
 export { default as xmart } from "./logo/xmart.jpg";
 export { default as ylogo } from "./logo/ylogo.jpg";
 export { default as zthunder } from "./logo/zthunder.jpg";
+// Fonts
+export { default as brandingpro } from "./fonts/brandingpro.jpg";
