@@ -2,15 +2,20 @@ import Button from "../../components/Button";
 import Container from "../../components/Container";
 import TypedText from "../../components/TypedText";
 import johandika from "../../assets/images/johandika.webp";
-import { FaGithub } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  RiInstagramFill,
+  RiLinkedinBoxFill,
+  RiLinkedinBoxLine,
+  RiLinkedinFill,
+} from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
-  const [openButtonActive, setOpenButtonActive] = useState(false)
+  const [openButtonActive, setOpenButtonActive] = useState(false);
   const dropdownRef = useRef(null);
-  
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -23,7 +28,7 @@ const HeroSection = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  
+
   const handleClickWhatsapp = () => {
     window.open(
       "https://api.whatsapp.com/send/?phone=6282370323310&text=Hallo+Johandika%2C+I+visit+from+your+website&type=phone_number&app_absent=0",
@@ -31,12 +36,15 @@ const HeroSection = () => {
     );
   };
 
-  const handleClickGithub = () => {
-    window.open("https://github.com/Johandika", "_blank");
+  const handleClickLinkedIn = () => {
+    window.open(
+      "https://id.linkedin.com/in/johandika-syahputra-lubis-a03421118",
+      "_blank"
+    );
   };
 
-  const handleClickInstagram = () => {
-    window.open("https://www.instagram.com/azonix_designer/", "_blank");
+  const handleClickGithub = () => {
+    window.open("https://github.com/Johandika", "_blank");
   };
 
   const handleShowcase = () => {
@@ -55,7 +63,7 @@ const HeroSection = () => {
 
   const handleResumeDeveloper = () => {
     window.open(
-      "https://drive.google.com/file/d/1S09i-9F3cT__wNTW9wi9lpHPAHGikRDi/view?usp=sharing",
+      "https://drive.google.com/file/d/1C0AUgkc3YMOpNfEwQQzvNFO91yXDl8f2/view?usp=sharing",
       "_blank"
     );
   };
@@ -88,31 +96,40 @@ const HeroSection = () => {
             onClick={handleShowcase}
           />
           <div
-          className=" relative px-4 sm:px-8 py-4 sm:py-4 rounded-lg ring-1 hover:bg-RedDarkest/10 ring-RedDarkest"
-            onClick={()=>setOpenButtonActive(true)}
+            className=" relative px-4 sm:px-8 py-4 sm:py-4 rounded-lg ring-1 hover:bg-RedDarkest/10 ring-RedDarkest"
+            onClick={() => setOpenButtonActive(true)}
             ref={dropdownRef}
           >
             Get Resume
-            {openButtonActive && 
-              (<div className="left-0 top-0 w-32 sm:w-40   bg-black absolute rounded-lg ">
-                  <button className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 border-b-[1px] rounded-t-lg " onClick={handleResumeDesigner}>Designer</button>
-                  <button className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 rounded-b-lg" onClick={handleResumeDeveloper}>Developer</button>
-              </div>)
-            }
-            {console.log('openButtonActive',openButtonActive)}
+            {openButtonActive && (
+              <div className="left-0 top-0 w-32 sm:w-40   bg-black absolute rounded-lg ">
+                <button
+                  className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 border-b-[1px] rounded-t-lg "
+                  onClick={handleResumeDesigner}
+                >
+                  Designer
+                </button>
+                <button
+                  className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 rounded-b-lg"
+                  onClick={handleResumeDeveloper}
+                >
+                  Developer
+                </button>
+              </div>
+            )}
+            {console.log("openButtonActive", openButtonActive)}
           </div>
-           
         </div>
         <div className="flex flex-row gap-4">
+          <FaLinkedin
+            size={35}
+            className="text-white cursor-pointer transition hover:scale-90 hover:text-RedDarkest"
+            onClick={handleClickLinkedIn}
+          />
           <FaGithub
             size={35}
             className="text-white cursor-pointer transition hover:scale-90 hover:text-RedDarkest"
             onClick={handleClickGithub}
-          />
-          <RiInstagramFill
-            size={35}
-            className="text-white cursor-pointer transition hover:scale-90 hover:text-RedDarkest"
-            onClick={handleClickInstagram}
           />
           <IoLogoWhatsapp
             size={35}

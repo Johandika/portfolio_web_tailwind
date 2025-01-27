@@ -9,7 +9,7 @@ import UnderConstruction from "./pages/UnderConstruction";
 import Logo from "./pages/Logo";
 import MultipleLink from "./pages/MultipleLink";
 import Fonts from "./pages/Fonts";
-
+import UIGallery from "./pages/UIGallery";
 function App() {
   const isLaptop = window.innerWidth >= 768;
 
@@ -72,7 +72,7 @@ function App() {
         />
         <Route
           path="/products/uidesign"
-          element={<UnderConstruction />}
+          element={<UIGallery />}
         />
         <Route
           path="/links/:id"

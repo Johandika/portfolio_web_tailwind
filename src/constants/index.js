@@ -673,32 +673,37 @@ const projectProgrammer = [
         description2: "Constraints:",
         list2: [
           "Adhering strictly to the provided design while ensuring responsiveness",
-          "Optimizing for performance given the rich visual content"
+          "Optimizing for performance given the rich visual content",
         ],
       },
       {
         title: "Process",
         process: "Design Analysis",
-        description: "Studied the provided design to understand the layout, color scheme, and interactive elements required.",
+        description:
+          "Studied the provided design to understand the layout, color scheme, and interactive elements required.",
         image: `${hoobank2}`, // Assuming you have additional images
         caption: "HooBank design analysis",
 
         process2: "Development",
-        description2: "Used React JS with Vite for fast development and Tailwind CSS for efficient styling. Implemented component-based architecture for maintainability.",
+        description2:
+          "Used React JS with Vite for fast development and Tailwind CSS for efficient styling. Implemented component-based architecture for maintainability.",
         // image2: `${hoobank}`,
         // caption2: "React component structure",
 
         process3: "Responsive Implementation",
-        description3: "Utilized Tailwind CSS's responsive classes to ensure the design looks great on all devices.",
+        description3:
+          "Utilized Tailwind CSS's responsive classes to ensure the design looks great on all devices.",
         image3: `${hoobank3}`,
         caption3: "Responsive design implementation",
 
         process4: "Performance Optimization",
-        description4: "Optimized images, and minimized bundle size for faster loading times.",
+        description4:
+          "Optimized images, and minimized bundle size for faster loading times.",
       },
       {
         title: "Result",
-        description: "Successfully delivered a high-fidelity, responsive landing page that accurately represents HooBank's brand and services. The website effectively communicates key information about the company's offerings, including credit card services, secure transactions, and business growth tools. The modern design and smooth interactions provide an engaging user experience that aligns with HooBank's image as a next-generation financial services provider.",
+        description:
+          "Successfully delivered a high-fidelity, responsive landing page that accurately represents HooBank's brand and services. The website effectively communicates key information about the company's offerings, including credit card services, secure transactions, and business growth tools. The modern design and smooth interactions provide an engaging user experience that aligns with HooBank's image as a next-generation financial services provider.",
         // image: `${autoposapps3}`,
         // caption: "Playstore Autopost",
       },
@@ -804,15 +809,14 @@ const projectProgrammer = [
       title: "Find and rent a car - quickly and easily!",
       description:
         "Simplify your car rental experience with our streamlined booking process. Browse our extensive catalog of vehicles and find the perfect car for your needs",
-      
     },
     content: [
       {
         title: "Project Overview",
         description:
           "This personal project showcases a modern frontend car rental website built with TypeScript, React JS, and Tailwind CSS. It features a user-friendly interface for browsing and renting various car models, with data sourced from Rapid API.",
-          image: `${rentalmobil}`,
-          caption: "Car rental website preview",
+        image: `${rentalmobil}`,
+        caption: "Car rental website preview",
       },
       {
         title: "Roles & Responsibilities",
@@ -832,30 +836,29 @@ const projectProgrammer = [
           "Integration with Rapid API for up-to-date car data",
           "TypeScript for enhanced code reliability",
           "Tailwind CSS for efficient and responsive styling",
-         ],
+        ],
       },
       {
         title: "Technical Stack",
         list: [
-            "Frontend: React JS with TypeScript",
-            "Styling: Tailwind CSS",
-            "API Integration: Rapid API",
-            "Deployment: Vercel",
+          "Frontend: React JS with TypeScript",
+          "Styling: Tailwind CSS",
+          "API Integration: Rapid API",
+          "Deployment: Vercel",
         ],
-    },
-    {
-      title: "Learning Outcomes",
-      description: "This project helped me gain hands-on experience with:",
-      list: [
+      },
+      {
+        title: "Learning Outcomes",
+        description: "This project helped me gain hands-on experience with:",
+        list: [
           "Building scalable React applications with TypeScript",
           "Implementing responsive designs using Tailwind CSS",
           "Integrating and managing external API data in a frontend application",
           "Deploying frontend applications on Vercel",
-      ],
-  },
+        ],
+      },
     ],
   },
-  
 ];
 
 const workExperiences = [
@@ -1414,11 +1417,20 @@ const fonts = [
   {
     name: "Branding Pro",
     image: brandingpro,
-    price: 'Free',
+    price: "Free",
     available: true,
     link: "https://www.dafont.com/branding-pro.font",
-  }
-]
+  },
+];
+
+const uiGallery = [
+  {
+    title: "Template CV ATS",
+    image: brandingpro,
+    price: "Free",
+    link: "https://drive.google.com/file/d/1U3NPhC5w1ig69_AV8F79YWJOIrf5Pr3U/view?usp=sharing",
+  },
+];
 
 export {
   skillDesign,
@@ -1428,5 +1440,6 @@ export {
   workExperiences,
   logoForSale,
   projectProgrammer,
-  fonts
+  fonts,
+  uiGallery,
 };

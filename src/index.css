@@ -27,7 +27,7 @@
 }
 
 #root {
-background-color: #121212;
+  background-color: #121212;
 }
 
 .parent {
@@ -36,7 +36,11 @@ background-color: #121212;
 
 .opacity-gradient-wrapper {
   position: relative;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
 }
 
 .parent {
@@ -54,3 +58,14 @@ body::before {
   }
 }
 
+/* Style untuk semua browser modern */
+::selection {
+  background-color: #c21823; /* Ganti dengan warna background yang diinginkan */
+  color: #ffffff; /* Ganti dengan warna text yang diinginkan */
+}
+
+/* Style untuk Firefox */
+::-moz-selection {
+  background-color: #ff5757;
+  color: #ffffff;
+}
