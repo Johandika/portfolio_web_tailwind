@@ -1,15 +1,15 @@
-import Skills from "./sections/Skills";
+import { Suspense, lazy } from 'react';
+import Skills from './sections/Skills';
+import HeroSection from './sections/HeroSection';
+import BackgroundAnimation from '../components/animation/BackgroundAnimation';
+import { useScroll, useInView } from 'framer-motion';
+import useSmooth from '../hooks/useSmooth';
+import { useRef } from 'react';
 
-import HeroSection from "./sections/HeroSection";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
-import Certificates from "./sections/Certificates";
-import Works from "./sections/Works";
-import BackgroundAnimation from "../components/animation/BackgroundAnimation";
-import { useScroll, useInView } from "framer-motion";
-import useSmooth from "../hooks/useSmooth";
-import { useRef } from "react";
-// import GrainyTexture from "../components/animation/GrainyTexture";
+const Projects = lazy(() => import('./sections/Projects'));
+const Works = lazy(() => import('./sections/Works'));
+const Certificates = lazy(() => import('./sections/Certificates'));
+const Contact = lazy(() => import('./sections/Contact'));
 
 const Home = () => {
   const ref = useRef(null);
@@ -17,21 +17,17 @@ const Home = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0", "1"],
+    offset: ['0', '1'],
   });
 
   const backgroundOpacity = useSmooth(scrollYProgress, [0.5, 1], [1, 0]);
 
   return (
     <>
-      {/* <GrainyTexture className={`h-screen w-screen fixed opacity-20 [filter:url('#grainyTexture')] bg-RedDarkest -z-20`}/> */}
-      <div
-        ref={ref}
-        className="font-Poppins sm:pt-[80px] pt-[60px]"
-      >
+      <div ref={ref} className="font-Poppins sm:pt-[80px] pt-[60px]">
         <BackgroundAnimation
           style={{
-            display: isInView ? "flex" : "none",
+            display: isInView ? 'flex' : 'none',
             opacity: backgroundOpacity,
           }}
           isActive={isInView}
@@ -39,10 +35,18 @@ const Home = () => {
         />
         <HeroSection />
         <Skills />
-        <Projects />
-        <Works />
-        <Certificates />
-        <Contact />
+        <Suspense fallback={<div className="text-white text-center py-20">Loading Projects...</div>}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={<div className="text-white text-center py-20">Loading Works...</div>}>
+          <Works />
+        </Suspense>
+        <Suspense fallback={<div className="text-white text-center py-20">Loading Certificates...</div>}>
+          <Certificates />
+        </Suspense>
+        <Suspense fallback={<div className="text-white text-center py-20">Loading Contact...</div>}>
+          <Contact />
+        </Suspense>
       </div>
     </>
   );

@@ -60,6 +60,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={client}
+            loading="lazy"
             className="w-full object-cover"
           />
         </div>

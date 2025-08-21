@@ -1,11 +1,11 @@
-import Container from "../components/Container";
-import { useParams } from "react-router-dom";
-import { IoChevronBackCircleOutline } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
-import Topic from "../components/Topic";
-import { projects } from "../constants";
-import Preview from "../components/Preview";
-import Button from "../components/Button";
+import Container from '../components/Container';
+import { useParams } from 'react-router-dom';
+import { IoChevronBackCircleOutline } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
+import Topic from '../components/Topic';
+import { projects } from '../constants';
+import Preview from '../components/Preview';
+import Button from '../components/Button';
 
 const ProjectId = () => {
   const { id } = useParams();
@@ -16,10 +16,9 @@ const ProjectId = () => {
   const handleBackClick = () => {
     navigate(-1);
   };
-  console.log(project.link);
 
   const handleClick = () => {
-    window.open(project.link, "_blank");
+    window.open(project.link, '_blank');
   };
 
   return (
@@ -27,17 +26,12 @@ const ProjectId = () => {
       <Container>
         <div className="flex flex-col  bg-white text-Black p-6 sm:p-10 gap-6">
           {/* Back button */}
-          <div
-            onClick={handleBackClick}
-            className="flex flex-row gap-2 items-center  group self-start"
-          >
+          <div onClick={handleBackClick} className="flex flex-row gap-2 items-center  group self-start">
             <IoChevronBackCircleOutline
               size={25}
               className=" text-gray-400 transition group-hover:scale-90 group-hover:text-RedDarkest"
             />
-            <p className="text-gray-400 cursor-pointer transition group-hover:text-RedDarkest">
-              Kembali
-            </p>
+            <p className="text-gray-400 cursor-pointer transition group-hover:text-RedDarkest">Kembali</p>
           </div>
           {/* Preview */}
           <Preview
@@ -90,11 +84,7 @@ const ProjectId = () => {
               />
             ))}
             {project.link && (
-              <Button
-                text={project.link}
-                className={"text-white tracking-widest self-center"}
-                onClick={handleClick}
-              />
+              <Button text={project.link} className={'text-white tracking-widest self-center'} onClick={handleClick} />
             )}
           </div>
         </div>

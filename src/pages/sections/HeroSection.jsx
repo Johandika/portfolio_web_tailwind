@@ -1,16 +1,11 @@
-import Button from "../../components/Button";
-import Container from "../../components/Container";
-import TypedText from "../../components/TypedText";
-import johandika from "../../assets/images/johandika.webp";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import {
-  RiInstagramFill,
-  RiLinkedinBoxFill,
-  RiLinkedinBoxLine,
-  RiLinkedinFill,
-} from "react-icons/ri";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { useEffect, useRef, useState } from "react";
+import Button from '../../components/Button';
+import Container from '../../components/Container';
+import TypedText from '../../components/TypedText';
+import johandika from '../../assets/images/johandika.webp';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { RiInstagramFill, RiLinkedinBoxFill, RiLinkedinBoxLine, RiLinkedinFill } from 'react-icons/ri';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { useEffect, useRef, useState } from 'react';
 
 const HeroSection = () => {
   const [openButtonActive, setOpenButtonActive] = useState(false);
@@ -23,101 +18,73 @@ const HeroSection = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   const handleClickWhatsapp = () => {
     window.open(
-      "https://api.whatsapp.com/send/?phone=6282370323310&text=Hallo+Johandika%2C+I+visit+from+your+website&type=phone_number&app_absent=0",
-      "_blank"
+      'https://api.whatsapp.com/send/?phone=6282370323310&text=Hallo+Johandika%2C+I+visit+from+your+website&type=phone_number&app_absent=0',
+      '_blank'
     );
   };
 
   const handleClickLinkedIn = () => {
-    window.open(
-      "https://id.linkedin.com/in/johandika-syahputra-lubis-a03421118",
-      "_blank"
-    );
+    window.open('https://id.linkedin.com/in/johandika-syahputra-lubis-a03421118', '_blank');
   };
 
   const handleClickGithub = () => {
-    window.open("https://github.com/Johandika", "_blank");
+    window.open('https://github.com/Johandika', '_blank');
   };
 
   const handleShowcase = () => {
-    window.open(
-      "https://drive.google.com/file/d/1Wxj5djjwiyWghw4RaXnIQZZ6YpqOAxWB/view",
-      "_blank"
-    );
+    window.open('https://drive.google.com/file/d/1Wxj5djjwiyWghw4RaXnIQZZ6YpqOAxWB/view', '_blank');
   };
 
   const handleResumeDesigner = () => {
-    window.open(
-      "https://drive.google.com/file/d/10xKtVOFb_JZo0tmNucM6WWD9m9IJv58X/view",
-      "_blank"
-    );
+    window.open('https://drive.google.com/file/d/10xKtVOFb_JZo0tmNucM6WWD9m9IJv58X/view', '_blank');
   };
 
   const handleResumeDeveloper = () => {
-    window.open(
-      "https://drive.google.com/file/d/1C0AUgkc3YMOpNfEwQQzvNFO91yXDl8f2/view?usp=sharing",
-      "_blank"
-    );
+    window.open('https://drive.google.com/file/d/1C0AUgkc3YMOpNfEwQQzvNFO91yXDl8f2/view?usp=sharing', '_blank');
   };
 
   return (
     <Container
-      className={
-        " flex flex-col sm:flex-row w-full h-fit sm:h-screen  justify-center items-center pt-5 sm:pt-0"
-      }
-    >
+      className={' flex flex-col sm:flex-row w-full h-fit sm:h-screen  justify-center items-center pt-5 sm:pt-0'}>
       {/* Container kiri */}
       <div className="flex-1 my-auto flex flex-col gap-4 sm:gap-5  order-2 sm:order-1">
-        <h2 className="text-lg sm:text-2xl font-SpaceMono">
-          Hi there ✌️, I'm Johandika
-        </h2>
-        <TypedText
-          className={"text-3xl sm:text-5xl font-bold "}
-          text={["Fullstack Javascript", "UI/UX Designer"]}
-        />
+        <h2 className="text-lg sm:text-2xl font-SpaceMono">Hi there ✌️, I'm Johandika</h2>
+        <TypedText className={'text-3xl sm:text-5xl font-bold '} text={['Fullstack Javascript', 'UI/UX Designer']} />
         <p className="leading-relaxed">
-          I am from Indonesia and have been pursuing a career in visual design
-          for the past 3 years. Currently, I am expanding my career skills into
-          website development and have worked on several projects as a fullstack
-          developer. Design and programming are my passions, and I am very
-          excited about the prospect of collaborating with you!
+          I am from Indonesia and have been pursuing a career in visual design for the past 3 years. Currently, I am
+          expanding my career skills into website development and have worked on several projects as a fullstack
+          developer. Design and programming are my passions, and I am very excited about the prospect of collaborating
+          with you!
         </p>
         <div className="flex flex-row flex-wrap gap-5">
-          <Button
-            text={"Get Showcase"}
-            onClick={handleShowcase}
-          />
+          <Button text={'Get Showcase'} onClick={handleShowcase} />
           <div
             className=" relative px-4 sm:px-8 py-4 sm:py-4 rounded-lg ring-1 hover:bg-RedDarkest/10 ring-RedDarkest"
             onClick={() => setOpenButtonActive(true)}
-            ref={dropdownRef}
-          >
+            ref={dropdownRef}>
             Get Resume
             {openButtonActive && (
               <div className="left-0 top-0 w-32 sm:w-40   bg-black absolute rounded-lg ">
                 <button
                   className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 border-b-[1px] rounded-t-lg "
-                  onClick={handleResumeDesigner}
-                >
+                  onClick={handleResumeDesigner}>
                   Designer
                 </button>
                 <button
                   className="text-sm text-center bg-black hover:bg-neutral-500 w-full h-16 rounded-b-lg"
-                  onClick={handleResumeDeveloper}
-                >
+                  onClick={handleResumeDeveloper}>
                   Developer
                 </button>
               </div>
             )}
-            {console.log("openButtonActive", openButtonActive)}
           </div>
         </div>
         <div className="flex flex-row gap-4">

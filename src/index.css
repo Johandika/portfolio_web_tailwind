@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -24,7 +24,7 @@
   font-family: "SpaceMono";
   src: url("fonts/SpaceMono-Bold.ttf") format("truetype");
   font-weight: bold;
-}
+} */
 
 #root {
   background-color: #121212;
