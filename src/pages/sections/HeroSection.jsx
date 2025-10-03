@@ -48,7 +48,7 @@ const HeroSection = () => {
   };
 
   const handleResumeDeveloper = () => {
-    window.open('https://drive.google.com/file/d/1C0AUgkc3YMOpNfEwQQzvNFO91yXDl8f2/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1B0ZrWzNYOIhl4nW5IRNt_cwd6o_z0xo_/view?usp=sharing', '_blank');
   };
 
   return (
