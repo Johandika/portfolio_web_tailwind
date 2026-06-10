@@ -23,7 +23,7 @@ const Contact = () => {
         "service_2hw5ex1",
         "template_beo40rj",
         form.current,
-        "33vCVq87JZqq6KFUV"
+        "IUhbA9bjLOZMwAfgV"
       )
       .then(
         (result) => {

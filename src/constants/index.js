@@ -4,6 +4,7 @@ import {
   bootstrap,
   dbeaver,
   expressjs,
+  golang,
   html,
   nextjs,
   nodejs,
@@ -132,6 +133,8 @@ import {
   hoobank3,
   rentalmobil,
   brandingpro,
+  lyrid,
+  eightycompany,
 } from "../assets/images/index.js";
 
 const skills = [
@@ -154,6 +157,10 @@ const skills = [
   {
     logo: `${nextjs}`,
     name: "Nextjs",
+  },
+  {
+    logo: `${golang}`,
+    name: "Golang",
   },
   {
     logo: `${nodejs}`,
@@ -865,8 +872,55 @@ const workExperiences = [
   {
     id: 1,
     company: "PT Putra Mandiri Informatika",
-    position: "U/UX Designer",
-    interval: "Aug/21 - Present",
+    position: "Backend Developer & Infrastructure",
+    interval: "Jan 2025 - Present",
+    summary: "In my role as a DevOps Engineer, I orchestrate the on-premise infrastructure and develop backend solutions to ensure the company's systems run seamlessly, from server to application.",
+    responsibilities: [
+      "On-Premise Server Orchestration: Managed the end-to-end on-premise server architecture, leveraging Proxmox for virtualization and resource optimization across all VM environments.",
+      "Network & Security Hardening: Engineered and secured the company's network infrastructure using Mikrotik, implementing port forwarding, static IP, and whitelist rules to protect and stabilize data flow.",
+      "Backend Solutions Development: Developed crucial backend and middleware solutions to facilitate testing and integration processes for key hardware products, including Soundbox, CDM, Palm Pay, and TMS.",
+      "Application Availability Assurance: Ensured the uninterrupted operation and accessibility of vital business applications (AOB, Sclab, Altibase) through proactive deployment management and system maintenance.",
+    ],
+    logo: `${pmi}`,
+    tools: [`${golang}`, `${expressjs}`, `${nodejs}`, `${postgre}`, `${reactjs}`],
+  },
+  {
+    id: 2,
+    company: "Lyrid",
+    position: "UI/UX Designer",
+    interval: "Dec 2025 - Mar 2026",
+    summary: "Lyrid is a cloud-native platform that simplifies multi-cloud management and serverless deployment, enabling developers and enterprises to scale applications globally with ease. In this dual role, I bridge the gap between brand identity and product experience. I am responsible for spearheading the company’s visual rebranding while ensuring the Lyrid Cloud platform delivers a seamless and intuitive user interface for our global user base.",
+    responsibilities: [
+      "Strategic Design Collateral: Developed high-stakes presentation decks for clients and investors across multiple platforms (PowerPoint, Google Slides, Canva, and PDF), ensuring a professional and cohesive narrative for fundraising and sales.",
+      "Comprehensive Brand Re-engineering: Led the corporate visual rebranding initiative, including logo redesign, the creation of a definitive Brand Guidelines manual, and the development of standardized templates for Instagram (feeds, single-post hard selling) and video content.",
+      "Product UI/UX Design: Designed the user interface and experience for the emerging Lyrid Cloud Service platform, focusing on simplifying complex cloud workflows into user-friendly layouts.",
+      "Frontend Styling & Global Theming: Directly managed and updated global CSS within the existing codebase to implement instant UI changes, ensuring brand consistency across color schemes and platform themes.",
+      "Multimedia & Motion Graphics: Produced motion graphic videos for corporate milestones and holidays, including end-to-end audio post-production (editing and noise reduction) for promotional advertisements.",
+    ],
+    logo: `${lyrid}`,
+    tools: [`${figma}`, `${affinity}`, `${affinityphoto}`, `${davinci}`, `${css}`, `${reactjs}`],
+  },
+  {
+    id: 3,
+    company: "80&Company",
+    position: "Frontend Developer",
+    interval: "Jan 2025 - Apr 2025",
+    responsibilities: [
+      "Translated design systems and UI/UX prototypes into code using Next.js 15 and Tailwind CSS.",
+      "Developed reusable frontend components to support various application needs.",
+      "Designed and implemented a mobile-responsive admin dashboard interface for multipurpose use.",
+      "Contributed to the development of the company's design system to enhance design consistency and efficiency in future projects.",
+      "Collaborated with the team remotely using Slack to ensure alignment between code implementation and design requirements."
+    ],
+    logo: `${eightycompany}`,
+    tools: [`${figma}`, `${nextjs}`, `${tailwind}`, `${js}`, `${reactjs}`],
+  },
+  {
+    id: 4,
+    company: "PT Putra Mandiri Informatika",
+    position: "UI/UX Designer",
+    interval: "Aug 2022 - Dec 2024",
+    summary: "PT PMI is the official distributor of SUNMI POS products in Indonesia. In addition to selling SUNMI products, PT PMI also serves IT Consultants and Services to create applications from clients using SUNMI devices. As a UI/UX Designer at PT PMI, I am responsible for working on various POS applications with various types of devices in a short time, making intense contact with the development team, and doing task management through Asana. Every Friday we always update the application that we are developing.",
     responsibilities: [
       "Design and develop the Autopos POS application in the form of integrated mobile, dashboard, and QR orders.",
       "Conduct end-to-end tests on newly updated applications.",
@@ -880,7 +934,7 @@ const workExperiences = [
     tools: [`${figma}`, `${affinity}`, `${affinityphoto}`, `${asana}`],
   },
   {
-    id: 2,
+    id: 5,
     company: "PT Banglele Indonesia Maju",
     position: "Graphic Designer",
     interval: "Jan/21 - Aug/22",
@@ -904,7 +958,7 @@ const workExperiences = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     company: "Erje TV",
     position: "Graphic Designer",
     interval: "Mar/20 - Aug/22",

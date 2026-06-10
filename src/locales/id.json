@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "home": "Beranda",
+    "products": "Produk",
+    "logo": "Logo",
+    "fonts": "Font"
+  },
+  "hero": {
+    "greeting": "Halo ✌️, Saya Johandika",
+    "roles": {
+      "fullstack": "Fullstack Developer",
+      "uiux": "UI/UX Designer"
+    },
+    "description": "Didorong oleh rasa ingin tahu yang mendalam, perjalanan saya mencakup Desain Grafis, UI/UX Design, hingga pemrograman sebagai Fullstack Developer. Hal ini memberi saya pandangan holistik untuk memecahkan masalah nyata. Saya tidak hanya membuat fitur; saya fokus pada logika bisnis untuk menciptakan 'painkiller' bagi pengguna, menjembatani tim desain, teknologi, dan bisnis untuk membangun solusi yang berdampak.",
+    "buttons": {
+      "showcase": "Lihat Portofolio",
+      "resume": "Unduh CV",
+      "designer": "Desainer",
+      "developer": "Developer"
+    }
+  }
+}

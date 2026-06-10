@@ -35,7 +35,7 @@ const Works = () => {
       <h2 className="font-SpaceMono text-4xl underline">Work Experiences</h2>
       {/* Container Cards */}
       <div
-        className="scrollbar-thin scrollbar-thumb-RedDarkest scrollbar-track-white flex flex-row gap-6 overflow-hidden w-full overflow-x-scroll pb-3 cursor-grab active:cursor-grabbing"
+        className="scrollbar-thin scrollbar-thumb-RedDarkest scrollbar-track-white flex flex-row items-start gap-6 overflow-y-hidden w-full h-fit overflow-x-scroll pb-3 cursor-grab active:cursor-grabbing select-none"
         ref={scrollContainerRef} // Menambahkan ref ke kontainer scroll
         onMouseDown={handleMouseDown} // Menambahkan event handler ke kontainer scroll
         onMouseLeave={handleMouseLeave} // Menambahkan event handler ke kontainer scroll
@@ -46,10 +46,10 @@ const Works = () => {
         {workExperiences?.map((item) => (
           <div
             key={item.id}
-            className="flex min-w-[400px] sm:min-w-[1000px] h-auto flex-col sm:flex-row bg-gradient-to-tl from-gray-800 via-Gray to-Gray p-8 rounded-lg gap-5 sm:gap-10 group "
+            className="flex min-w-[400px] sm:min-w-[1000px] h-fit flex-col sm:flex-row bg-gradient-to-tl from-gray-800 via-Gray to-Gray p-8 rounded-xl border border-white/5 shadow-2xl gap-5 sm:gap-10 group transition-all duration-300 hover:border-white/10"
           >
             {/* Kiri */}
-            <div className="flex flex-col gap-5 w-fit ">
+            <div className="flex-1 flex flex-col gap-5">
               <div className="mb-2">
                 <img
                   src={item.logo}
@@ -72,10 +72,16 @@ const Works = () => {
             </div>
             <div className="h-full w-[1px] border-[1px] border-gray-600/20 my-auto hidden sm:block"></div>
             {/* Kanan */}
-            <div className="flex-1 flex flex-col gap-5">
+            <div className="flex-[3] flex flex-col gap-5">
+              {item.summary && (
+                <div className="flex flex-col gap-2">
+                  <div className="text-xs text-white/30 uppercase tracking-wider">Summary</div>
+                  <p className="text-sm text-white/80 leading-relaxed mb-2">{item.summary}</p>
+                </div>
+              )}
               <div className="flex flex-col gap-2">
-                <div className="text-sm text-white/30">Responsibility:</div>
-                <ol className=" flex flex-col gap-2">
+                <div className="text-xs text-white/30 uppercase tracking-wider">Responsibility</div>
+                <ol className="flex flex-col gap-2 text-sm text-white/80 leading-relaxed">
                   {/* Looping Responsibilities */}
                   {item.responsibilities.map((item, index) => (
                     <li
@@ -89,8 +95,8 @@ const Works = () => {
                 </ol>
               </div>
               <div className="flex flex-col gap-2">
-                <div className="text-sm text-white/30">Tools:</div>
-                <div className="flex flex-row gap-3">
+                <div className="text-xs text-white/30 uppercase tracking-wider">Tools</div>
+                <div className="flex flex-row flex-wrap items-center gap-3">
                   {/* Looping Tools */}
                   {item.tools.map((tool, index) => (
                     <div key={index + 1}>

@@ -10,6 +10,8 @@ import Logo from "./pages/Logo";
 import MultipleLink from "./pages/MultipleLink";
 import Fonts from "./pages/Fonts";
 import UIGallery from "./pages/UIGallery";
+import Footer from "./components/Footer";
+
 function App() {
   const isLaptop = window.innerWidth >= 768;
 
@@ -79,6 +81,7 @@ function App() {
           element={<MultipleLink />}
         />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

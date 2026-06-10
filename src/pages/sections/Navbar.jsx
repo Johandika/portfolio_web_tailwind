@@ -9,6 +9,7 @@ import { FaReact } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const navigation = [
   { name: "Home", href: "/", current: location.pathname === "/", multi: false },
@@ -28,18 +29,18 @@ const navigation = [
         icon: <AiOutlineFontSize />,
         current: location.pathname === "/products/fonts",
       },
-      {
-        name: "Code",
-        href: "/products/code",
-        icon: <FaReact />,
-        current: location.pathname === "/products/code",
-      },
-      {
-        name: "UI Design",
-        href: "/products/uidesign",
-        icon: <MdOutlineDesignServices />,
-        current: location.pathname === "/products/uidesign",
-      },
+      // {
+      //   name: "Code",
+      //   href: "/products/code",
+      //   icon: <FaReact />,
+      //   current: location.pathname === "/products/code",
+      // },
+      // {
+      //   name: "UI Design",
+      //   href: "/products/uidesign",
+      //   icon: <MdOutlineDesignServices />,
+      //   current: location.pathname === "/products/uidesign",
+      // },
     ],
   },
 ];
@@ -52,6 +53,12 @@ export default function Navbar() {
   const { scrollYProgress } = useScroll();
   const [showNavbar, setShowNavbar] = useState(true);
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "id" : "en";
+    i18n.changeLanguage(newLang);
+  };
 
   useEffect(() => {
     return scrollYProgress.onChange((latest) => {
@@ -108,7 +115,7 @@ export default function Navbar() {
                   </div>
                   {/* Menu Web Tampilan Full */}
                   <div className="hidden sm:ml-6 sm:flex flex-row items-center justify-center ">
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 items-center">
                       {navigation.map((item) =>
                         item.multi === false ? (
                           <div
@@ -118,11 +125,11 @@ export default function Navbar() {
                               location.pathname === item.href
                                 ? "bg-RedDarkest/20 text-white font-medium"
                                 : "text-gray-300 hover:bg-RedDarkest hover:text-white font-normal",
-                              "rounded-md px-3 py-2 text-sm"
+                              " rounded-md px-3 py-2 text-sm h-fit",
                             )}
                             aria-current={item.current ? "page" : undefined}
                           >
-                            {item.name}
+                            {t(`navbar.${item.name.toLowerCase()}`)}
                           </div>
                         ) : (
                           <Menu
@@ -134,14 +141,14 @@ export default function Navbar() {
                               <Menu.Button
                                 className={classNames(
                                   item.items.some(
-                                    (item) => location.pathname === item.href
+                                    (item) => location.pathname === item.href,
                                   )
                                     ? "bg-red-900 text-white font-medium"
                                     : "text-gray-300 hover:bg-RedDarkest hover:text-white font-normal",
-                                  "inline-flex w-full rounded-md justify-center  px-3 py-2 text-sm text-white  "
+                                  "inline-flex w-full rounded-md justify-center  px-3 py-2 text-sm text-white  ",
                                 )}
                               >
-                                Products
+                                {t("navbar.products")}
                                 <ChevronDownIcon
                                   className="-mr-1 ml-2 h-5 w-5 text-violet-200 hover:text-violet-100"
                                   aria-hidden="true"
@@ -186,7 +193,9 @@ export default function Navbar() {
                                               {submenu.icon}
                                             </span>
                                           )}
-                                          {submenu.name}
+                                          {t(
+                                            `navbar.${submenu.name.toLowerCase()}`,
+                                          )}
                                         </button>
                                       )}
                                     </Menu.Item>
@@ -195,8 +204,23 @@ export default function Navbar() {
                               </Menu.Items>
                             </Transition>
                           </Menu>
-                        )
+                        ),
                       )}
+                      <button
+                        onClick={toggleLanguage}
+                        className="inline-flex items-center h-fit text-gray-300 hover:bg-RedDarkest hover:text-white rounded-md px-3 py-2 text-sm font-normal transition-colors uppercase"
+                      >
+                        <img
+                          src={
+                            i18n.language === "id"
+                              ? "https://flagcdn.com/w20/id.png"
+                              : "https://flagcdn.com/w20/us.png"
+                          }
+                          alt="flag"
+                          className="mr-2 w-5 h-auto rounded-[2px]"
+                        />
+                        {i18n.language}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -216,13 +240,13 @@ export default function Navbar() {
                         location.pathname === item.href
                           ? "bg-red-900 text-white font-medium"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white font-normal",
-                        "block rounded-md px-3 py-2 text-base"
+                        "block rounded-md px-3 py-2 text-base",
                       )}
                       aria-current={
                         location.pathname === item.href ? "page" : undefined
                       }
                     >
-                      {item.name}
+                      {t(`navbar.${item.name.toLowerCase()}`)}
                     </Disclosure.Button>
                   ) : (
                     <Menu
@@ -234,18 +258,18 @@ export default function Navbar() {
                         <Menu.Button
                           className={classNames(
                             item.items.some(
-                              (item) => location.pathname === item.href
+                              (item) => location.pathname === item.href,
                             )
                               ? "bg-red-900 text-white font-medium"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white font-normal",
-                            "inline-flex w-full justify-center items-center rounded-md  px-3 py-2 text-white text-base"
+                            "inline-flex w-full justify-center items-center rounded-md  px-3 py-2 text-white text-base",
                           )}
                         >
                           <ChevronDownIcon
                             className=" mr-2 h-5 w-full justify-center items-center flex text-violet-200 hover:text-violet-100"
                             aria-hidden="true"
                           />
-                          Products
+                          {t("navbar.products")}
                         </Menu.Button>
                       </div>
                       <Transition
@@ -288,7 +312,7 @@ export default function Navbar() {
                                         {submenu.icon}
                                       </span>
                                     )}
-                                    {submenu.name}
+                                    {t(`navbar.${submenu.name.toLowerCase()}`)}
                                   </button>
                                 )}
                               </Menu.Item>
@@ -297,8 +321,23 @@ export default function Navbar() {
                         </Menu.Items>
                       </Transition>
                     </Menu>
-                  )
+                  ),
                 )}
+                <button
+                  onClick={toggleLanguage}
+                  className="w-full text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium flex items-center justify-end transition-colors uppercase"
+                >
+                  <img
+                    src={
+                      i18n.language === "id"
+                        ? "https://flagcdn.com/w20/id.png"
+                        : "https://flagcdn.com/w20/us.png"
+                    }
+                    alt="flag"
+                    className="mr-2 w-5 h-auto rounded-[2px]"
+                  />
+                  {i18n.language}
+                </button>
               </div>
             </Disclosure.Panel>
           </>

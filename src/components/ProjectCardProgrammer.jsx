@@ -24,7 +24,7 @@ const ProjectCardProgrammer = ({
           : shadowGreen
           ? "hover:shadow-green-500"
           : "hover:shadow-RedDarkest"
-      } hover:shadow-RedDarkest transition overflow-hidden cursor-pointer group`}
+      } hover:shadow-RedDarkest transition overflow-hidden group`}
     >
       <div className="w-full h-full sm:w-1/2 px-6 py-6 sm:py-0 sm:px-0 sm:pr-2 sm:pl-6 font-SpaceMono shadow-lg flex flex-col gap-2  order-2 sm:order-1 justify-between  ">
         <h2 className="text-gray-400 text-2xl tracking-widest">{tipe}</h2>

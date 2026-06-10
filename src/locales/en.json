@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "logo": "Logo",
+    "fonts": "Fonts"
+  },
+  "hero": {
+    "greeting": "Hi there ✌️, I'm Johandika",
+    "roles": {
+      "fullstack": "Fullstack Developer",
+      "uiux": "UI/UX Designer"
+    },
+    "description": "Driven by deep curiosity, my journey spans Graphic Design, UI/UX Design, to coding as a Fullstack Developer. This gives me a holistic view to solve real problems. I don't just build features; I focus on business logic to create 'painkillers' for users, bridging design, tech, and business teams to build impactful solutions.",
+    "buttons": {
+      "showcase": "Get Showcase",
+      "resume": "Get Resume",
+      "designer": "Designer",
+      "developer": "Developer"
+    }
+  }
+}
