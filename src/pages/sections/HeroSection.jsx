@@ -12,6 +12,7 @@ import {
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import Tilt from "react-parallax-tilt";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -137,11 +138,22 @@ const HeroSection = () => {
       </div>
       {/* Container Kanan */}
       <div className="flex-1 flex justify-center items-center order-1 sm:order-2 ">
-        <img
-          src={johandika}
-          alt="Johandika Syahputra Lubis"
-          className="sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover "
-        />
+        <Tilt
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          tiltReverse={true}
+          perspective={1000}
+          transitionSpeed={1000}
+          scale={1.02}
+          gyroscope={true}
+          trackOnWindow={true}
+        >
+          <img
+            src={johandika}
+            alt="Johandika Syahputra Lubis"
+            className="sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover "
+          />
+        </Tilt>
       </div>
     </Container>
   );
