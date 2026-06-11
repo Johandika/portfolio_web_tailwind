@@ -92,7 +92,7 @@ const HeroSection = () => {
 
   const handleResumeDeveloper = () => {
     window.open(
-      "https://drive.google.com/file/d/1B0ZrWzNYOIhl4nW5IRNt_cwd6o_z0xo_/view?usp=sharing",
+      "https://drive.google.com/file/d/1mjdc8xO_qRxlLKzY2KZ84_NZb9q1WBL0/view?usp=sharing",
       "_blank",
     );
   };
