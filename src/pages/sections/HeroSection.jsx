@@ -230,25 +230,12 @@ const HeroSection = () => {
           trackOnWindow={true}
           className="relative z-10"
         >
-          {/* Foto utama dengan efek screen 20% */}
-          <div className="relative">
-            {/* Gambar dasar */}
+          {/* Foto utama */}
+          <div className="relative will-change-transform">
             <img
               src={johandika}
               alt="Johandika Syahputra Lubis"
               className="sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover drop-shadow-[15px_0px_30px_rgba(0,0,0,1.8)] pb-12"
-            />
-            {/* Screen 5% */}
-            <img
-              src={johandika}
-              alt=""
-              className="absolute inset-0 sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover mix-blend-screen opacity-10 pb-12 pointer-events-none"
-            />
-            {/* Overlay 20% */}
-            <img
-              src={johandika}
-              alt=""
-              className="absolute inset-0 sm:w-fit h-[400px] sm:h-[450px] md:h-[600px] object-cover mix-blend-overlay opacity-5 pb-12 pointer-events-none"
             />
           </div>
         </Tilt>
